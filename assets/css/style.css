@@ -28,8 +28,8 @@ Author URI: http://xpeedstudio.com
    ========================================================================== */
 html,
 body {
-    /*background:url(/images/bodybg.png) repayet-y;*/
-    background-image: url("/images/bodybg.png");
+    /*background:url(/assets/images/bodybg.png) repayet-y;*/
+    background-image: url("/assets/images/bodybg.png");
     background-repeat: repeat-y;
     font-size: 16px;
     color: #797979;
@@ -321,7 +321,7 @@ ul{
 
 /*all overlay*/
 .overlay_dot{
-    background: url(/images/overlay-img.png) no-repeat top center;
+    background: url(/assets/images/overlay-img.png) no-repeat top center;
     background-color: rgba(51,51,51,0.75);
     background-size: cover;
     position: absolute;
@@ -348,7 +348,7 @@ ul{
     top: 0;
 }
 .download_overlay{
-    background: url(/images/downloadbg.png) repeat-y;
+    background: url(/assets/images/downloadbg.png) repeat-y;
     width:100%;
     height: 100%;
     position: absolute;
@@ -723,7 +723,7 @@ textarea::-ms-input-placeholder{
 
 /*for image bg*/
 /*.img-bg{
-  background: url(/images/home-msg.jpg) no-repeat center top fixed;
+  background: url(/assets/images/home-msg.jpg) no-repeat center top fixed;
   background-size
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -919,7 +919,7 @@ Home Section style
 ==================*/
 
 .home{
-    background: url(/images/homebg.png) no-repeat top center;
+    background: url(/assets/images/homebg.png) no-repeat top center;
     background-size: cover;
     position: relative;
 }
