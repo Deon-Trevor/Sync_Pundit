@@ -1307,3 +1307,12 @@ nav.navbar.bootsnav.footer-menu ul li a:hover{
     background-color: blueviolet;
     color:#fff;
 }
+
+.soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}
