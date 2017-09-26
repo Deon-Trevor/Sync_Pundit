@@ -1,9 +1,9 @@
 ---
 layout: post
 category : poesie
-tagline: ""
+tagline: 
 tags : [poesie]
-img : what-women-want.jpg
+img : 
 author : Antonio Trento
 css: 
 js: 
