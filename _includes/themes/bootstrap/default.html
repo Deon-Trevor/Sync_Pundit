@@ -82,12 +82,14 @@ lantoniotrento@gmail.com
     {% endif %}
   </head>
   <body>
+  <div class="culmn">
+      <!--Home page style-->
       {{ content }}
-
-    {% include JB/analytics %}
-    {% if site.JB.comments.disqus.short_name == true %}
-    <script id="dsq-count-scr" src="//{{ site.JB.comments.disqus.short_name }}.disqus.com/count.js" async></script>
-    {% endif %}
+  </div>
+  {% include JB/analytics %}
+  {% if site.JB.comments.disqus.short_name == true %}
+  <script id="dsq-count-scr" src="//{{ site.JB.comments.disqus.short_name }}.disqus.com/count.js" async></script>
+  {% endif %}
 
 
 <!-- ********************* Grads SCRIPTING ******************************-->
