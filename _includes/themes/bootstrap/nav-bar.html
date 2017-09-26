@@ -1,24 +1,37 @@
-<!-- Fixed navbar <nav class="navbar navbar-toggleable-md navbar-inverse sticky-top bg-inverse"> -->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+            <nav class="navbar navbar-default bootsnav navbar-fixed white no-background">
+                <div class="container">  
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-          {% assign pages_list = site.pages %}
-          {% assign group = 'navigation' %}
-          {% include JB/pages_list %}
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li><a href="https://www.facebook.com/noalfemmnicidio/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/no__violence"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/noalfemmnicidio/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>        
+                    <!-- End Atribute Navigation -->
+
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#brand">
+                            <img src="assets/images/noalfemminicidio_white3.png" class="logo logo-display" alt="">
+                            <img src="assets/images/noalfemminicidio3.png" class="logo logo-scrolled" alt="">
+                        </a>
+
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- navbar menu -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-center">
+                         {% assign pages_list = site.pages %}
+                         {% assign group = 'navigation' %}
+                         {% include JB/pages_list %}
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>   
+            </nav>
