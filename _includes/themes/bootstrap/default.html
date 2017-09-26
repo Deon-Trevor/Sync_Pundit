@@ -99,9 +99,9 @@ lantoniotrento@gmail.com
 	  
   <div class="culmn">
       <!--Home page style--> 
-      {% include themes/bootstrap/nav-bar.html %}
-	  
+      {% include themes/bootstrap/nav-bar.html %}  
       {{ content }}
+      {% include themes/bootstrap/footer.html %}
   </div>
   {% include JB/analytics %}
   {% if site.JB.comments.disqus.short_name == true %}
