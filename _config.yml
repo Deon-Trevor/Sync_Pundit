@@ -21,16 +21,16 @@ google_ad_client: ca-pub-9204963049240271
 post_limit: 5
 
 
-title : Grads
-tagline: Gradient responsive templeate built for jekyll3
+title : No Al Femminicidio
+tagline: Il blog contro la violenza sulle donne
 author :
-  name : Grads
+  name : NoAlFemminicidio
   email : lantoniotrento@gmail.com
   github : antoniotrento
-  twitter : lantoniotrento
+  twitter : no__violence
   feedburner : 
 
-twitter_username: lantoniotrento
+twitter_username: no_violence
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
