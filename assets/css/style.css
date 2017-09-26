@@ -1316,3 +1316,33 @@ nav.navbar.bootsnav.footer-menu ul li a:hover{
     padding: 0px;
     text-align: center;
 }
+
+.soc li {
+  display: inline-block;
+  margin: 5px;
+  margin: 0.5rem;
+}
+.soc a, .soc svg {
+  display: block;
+}
+.soc a {
+  position: relative;
+  height: 26px;
+  height: 2.6rem;
+  width: 26px;
+  width: 2.6rem;
+}
+.soc svg {
+  height: 100%;
+  width: 100%;
+}
+.soc em {
+  font-size: 4px;
+  line-height: 0.5;
+  margin-top: -0.75em;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
