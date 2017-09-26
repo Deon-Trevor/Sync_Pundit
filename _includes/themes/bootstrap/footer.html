@@ -42,10 +42,11 @@
 
                                     <!-- Start Atribute Navigation -->
                                     <div class="attr-nav">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <ul>                            
+                                           {% if site.author.facebook %}<li><a href="https://www.facebook.com/{{ site.author.facebook }}/"><i class="fa fa-facebook"></i></a></li>{% endif %}
+                                           {% if site.author.twitter %}<li><a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter"></i></a></li>{% endif %}
+                                           {% if site.author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/"><i class="fa fa-linkedin"></i></a></li>{% endif %}
+                                           {% if site.author.instagram %}<li><a href="https://www.instagram.com/{{ site.author.instagram }}/"><i class="fa fa-instagram"></i></a></li>{% endif %}
                                         </ul>
                                     </div>        
                                     <!-- End Atribute Navigation -->
@@ -63,10 +64,9 @@
                                     <!-- navbar menu -->
                                     <div class="collapse navbar-collapse" id="navbar-footer">
                                         <ul class="nav navbar-nav navbar-center">
-                                            <li><a href="#home">Home</a></li>                    
-                                            <li><a href="#features">Features</a></li>
-                                            <li><a href="#reviews">Reviews</a></li>
-                                            <li><a href="#download">Download</a></li>
+                                          {% assign pages_list = site.pages %}
+                                          {% assign group = 'navigation' %}
+                                          {% include JB/pages_list %}
                                         </ul>
                                     </div><!-- /.navbar-collapse -->
                                 </div>   
