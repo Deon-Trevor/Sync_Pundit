@@ -2,11 +2,11 @@
 layout: blog
 title: Blog
 group: navigation
-tags : [blog, noalfemminicidio, posts, post]
+tags : [blog, posts, post]
 author : Antonio Trento
 css: 
 js:
-keywords: noalfemminicidio, femminicidio, blog, aiuto, violenza, donne
+keywords: noalfemminicidio, femminicidio, blog, aiuto, violenza, donne, no-profit
 canonical: https://noalfemminicidio.github.io/blog
 ---
 {% include JB/setup %}
@@ -22,11 +22,11 @@ canonical: https://noalfemminicidio.github.io/blog
                 {% if post.img %}
                   <div class="wow pulse" data-wow-duration="0.5s"><img src="{{ BASE_PATH }}/assets/images/{{ post.img }}" alt="{{ post.title }} image" class="img-rounded img-responsive"></div>
                 {% endif %}
-		</br>
+		
                 <p class="lead">
                     Tags: {{post.tags | array_to_sentence_string}}
                 </p>
-		</br>
+		
                 <p><span class="glyphicon glyphicon-time"></span> Post del {{ post.date | date_to_string }}</p>
 		</br>
 		{{ post.excerpt }}
