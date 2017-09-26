@@ -1234,7 +1234,7 @@ Download Section style
 }
 .download_item img.app_right{
     position: relative;
-    bottom:-60px;
+    /*bottom:-60px;*/
 }
 .download_app{
     margin-left:-10px;
