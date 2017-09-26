@@ -20,7 +20,7 @@ C’è un odore acre, ferroso.
 Se guardi meglio ti accorgi che ha anche un colore.
 
 Ed è rosso: una chiazza vischiosa, densa.
-
+<!--more-->
 Una pozza di sangue che dilaga, con artigli acuminati, terribili.
 
 Che strappano grida e cuori.
