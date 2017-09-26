@@ -12,7 +12,7 @@ canonical: https://noalfemminicidio.github.io
 
 ---
 {% include JB/setup %}
-
+<!--more-->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Po16lsLfpMk" frameborder="0" allowfullscreen></iframe>
 
 ### Trama
