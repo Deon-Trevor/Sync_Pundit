@@ -3,7 +3,7 @@ layout: post
 category : video
 tagline: "Piccole cose di valore non quantificabile"
 tags : [donne, violenze, libertà]
-img : 1.jpg
+img : piccole-cose-di-valore-non-quantificabile.png
 author : Antonio Trento
 css: 
 js: 
