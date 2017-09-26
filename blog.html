@@ -24,7 +24,7 @@ canonical: https://noalfemminicidio.github.io/blog
                 {% endif %}
 		
                 <p class="lead">
-                    Tags: {{post.tags | array_to_sentence_string}} <span class="glyphicon glyphicon-time"></span> Post del {{ post.date | date_to_string }}
+                    <strong>Tags: {{post.tags | array_to_sentence_string}}. <span class="glyphicon glyphicon-time"></span> Post del {{ post.date | date_to_string }}</strong>
                 </p>
 		
 		{{ post.excerpt }}
