@@ -47,9 +47,14 @@
 
         <div class="col-sm-8 blog-main post">
 
-           {{ content }}     
+          {% include ads-block.html %}
+          <br />
+           {{ content }}
+          <br />
+          {% include ads-block.html %}
+          <br />    
 
-            {% include JB/comments %}
+          {% include JB/comments %}
           
 
         </div>
