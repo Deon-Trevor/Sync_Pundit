@@ -12,6 +12,8 @@ canonical: https://noalfemminicidio.github.io
 
 ---
 
+{{ config.twitter }}
+
 “Mia moglie si è ammalata. Era sempre nervosa a causa dei problemi sul lavoro, con i bambini, nella vita personale e dei suoi fallimenti. Aveva perso 14 kg, arrivando a pesare circa 41 kg a 35 anni. 
 
 Era davvero scheletrica e piangeva sempre. Non era una donna felice. Soffriva di continui mal di testa, fitte al cuore. Non dormiva bene, si addormentava solo il mattino e si stancava molto velocemente durante il giorno. 
