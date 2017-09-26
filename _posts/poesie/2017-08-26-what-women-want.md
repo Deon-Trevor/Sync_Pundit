@@ -1,6 +1,6 @@
 ---
 layout: post
-category : lessons
+category : poesie
 tagline: "Il web contro la violenza sulle donne"
 tags : [poesie]
 img : what-women-want.jpg
