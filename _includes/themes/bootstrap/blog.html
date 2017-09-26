@@ -1,32 +1,43 @@
-<div id="fullpage">
-  <div class="section" id="section0">
-    <div style="background-size: cover; background-image:url('{{ BASE_PATH }}/assets/img/{% if page.img %}{{ page.img }}{% else %}generic.jpg{% endif %}')" class="slide">       
-        <div class="jumbotronic" style="text-align: center">
-          <h1 class="heavy">{{ page.title }}</h1>
-          {% if page.tagline %} <h2 class="heavy">{{ page.tagline }}</h2>{% endif %}
-        </div>
-    </div>        
-    {% if page.title2 %}<div style="background-size: cover; background-image:url('{{ BASE_PATH }}/assets/img/{% if page.img2 %}{{ page.img2 }}{% else %}generic.jpg{% endif %}')" class="slide">
-    <div class="jumbotronic" style="text-align: center">
-      <h1 class="heavy">{{ page.title2 }}</h1>
-    </div>{% endif %}
-    </div>
- 
-    {% if page.title3 %}<div style="background-size: cover; background-image:url('{{ BASE_PATH }}/assets/img/{% if page.img3 %}{{ page.img3 }}{% else %}generic.jpg{% endif %}')" class="slide">
-    <div class="jumbotronic" style="text-align: center">
-      <h1 class="heavy">{{ page.title3 }}</h1>{% endif %}
-    </div>
-  </div>
- </div>
-</div>
+            <!--Home Sections-->
 
-  {% include themes/bootstrap/nav-bar.html %}  
+            <section id="home" class="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_home">
+                            <div class="col-md-6">
+                                <div class="home_text">
+                                    <h1 class="text-white">Odi anche tu gli abusi?</h1>
+                                    <p class="text-white">Fai parte anche tu dell'esclusiva community di </strong>#NoAlfemminicidio</strong>. Diventa membro iscrivendoti al gruppo segreto!</p>
+                                </div>
+
+                                <div class="home_btns m-top-40">
+                                    <a href="{{ BASE_PATH }}/iscriviti" target="_blank" class="btn btn-danger m-top-20">Iscriviti</a>
+                                    <a href="#screen_area" class="btn btn-primary m-top-20">Scopri di più</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="phone_one phone_attr1 text-center sm-m-top-50">
+                                    <div class="attr_deg">No</div>
+                                    <div class="attr_rio text-uppercase">No</div>
+                                    <div class="attr_sun text-uppercase text-white">Alla</div>
+                                    <div class="attr_lon text-uppercase text-white">Violenza</div>
+                                    <img src="assets/images/01-image-noalfemminicidio.jpg" alt="" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="scrooldown">
+                            <a href="#screen_area"><i class="fa fa-chevron-down"></i></a>
+                        </div>
+
+                    </div><!--End off row-->
+                </div><!--End off container -->
+            </section> <!--End off Home Sections-->
+                </br></br></br>
 
 
-<br />
-<br />
 
-    <div class="container">
 
       <div class="row">
 
@@ -34,31 +45,8 @@
 
            {{ content }}     
 
-          <div class="row">
-
-                <div class="col-sm-8">
-
-                  <div class="jumbotron" style="background: white">
-                    <h1 class="display-3">Share It!</h1>
-                    <div class="text-center">{% include social-share.html %}</div>
-                    <hr class="my-4">
-                  </div>                                 
-
-                </div>
-
-          </div>
-          <hr>
-          
-          <div class="jumbotron" style="background: white">
-            <h1 class="display-3">Ask Me!</h1>
-            <p class="lead">Ask me someting about this theme or to know me more.</p>
-            <hr class="my-4">
-          </div>
             {% include JB/comments %}
           
-
-
-                
 
         </div>
 
@@ -68,38 +56,6 @@
       </div>
 
           
-
-    </div>
-
-
-          <!-- FULL SCREEN MODAL SUBMIT open/close -->
-      <div class="overlay overlay-hugeinc">
-        <button type="button" class="overlay-close">Close</button>
-
-        <nav>
-          <form action="//altervista.us8.list-manage.com/subscribe/post?u=a36bd3e356847dab838227fce&amp;id=3c63d825b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <ul>
-            <li>
-              <label>Name</label>
-            </li>
-            <li>
-              <input class="span11" type="text" name="FNAME" id="first_name" placeholder="Jonathan">
-            </li>
-            <li>
-              <label>Email</label>
-            </li>
-            <li>
-              <input class="span11" type="text" id="email" name="EMAIL" placeholder="jon@doe.com">
-            </li>
-            <li>
-              <input class="cbp-mc-submit" type="submit" value="Invia" name="subscribe" />
-            </li>
-          </ul>
-        </form>
-        </nav>
-
-      </div>
-
 
 
 
