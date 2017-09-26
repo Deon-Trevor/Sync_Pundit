@@ -15,6 +15,5 @@ canonical: https://noalfemminicidio.github.io
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Po16lsLfpMk" frameborder="0" allowfullscreen></iframe>
 
-<div class="video-container">
-	<iframe width="100%" height="auto" src="https://www.youtube.com/embed/Po16lsLfpMk" frameborder="0" allowfullscreen></iframe>
-</div>
+## Trama Wikipedia
+https://it.wikipedia.org/wiki/Piccole_cose_di_valore_non_quantificabile
