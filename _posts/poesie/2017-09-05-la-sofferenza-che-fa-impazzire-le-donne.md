@@ -12,7 +12,7 @@ canonical: https://noalfemminicidio.github.io
 
 ---
 
-{{ config.twitter }}
+{{ site.twitter }}
 
 “Mia moglie si è ammalata. Era sempre nervosa a causa dei problemi sul lavoro, con i bambini, nella vita personale e dei suoi fallimenti. Aveva perso 14 kg, arrivando a pesare circa 41 kg a 35 anni. 
 
