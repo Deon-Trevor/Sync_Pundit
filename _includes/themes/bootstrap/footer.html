@@ -1,90 +1,14 @@
-
-            <!--App Download Section-->
-            <section id="download" class="download m-top-100">
-                <div class="download_overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="main_download ">
-                            <div class="col-md-6">
-                                <div class="download_item roomy-100">
-                                    <h2 class="text-white">Dona a No Al Femminicidio.</h2>
-                                    <h5 class="text-white">Per essere d'aiuto a chi ha avuto problemi, stiamo pianificando di espadere l'assistenza da solo chat a telefonica con numero verde per tutte le persone abusate. Contribuisci alla nostra raccolta fondi oppure su Patreon.</h5>
-
-                                    <div class="home_btns m-top-40">
-                                          <a href="{{ BASE_PATH }}/iscriviti" target="_blank" class="btn btn-danger m-top-20">Dona</a>
-                                          <a href="#screen_area" class="btn btn-primary m-top-20">Patreon</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="download_item m-top-70">
-                                    <img class="app_right" src="{{ BASE_PATH }}/assets/images/green-phone-1.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-
-            <!-- scroll up-->
-            <div class="scrollup">
-                <a href="#"><i class="fa fa-chevron-up"></i></a>
-            </div><!-- End off scroll up -->
-            
-            
-            <footer id="footer" class="footer bg-black">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <nav class="navbar navbar-default bootsnav footer-menu no-background">
-                                <div class="container">  
-
-                                    <!-- Start Atribute Navigation -->
-                                    <div class="attr-nav">
-                                        <ul>                            
-                                           {% if site.author.facebook %}<li><a href="https://www.facebook.com/{{ site.author.facebook }}/"><i class="fa fa-facebook"></i></a></li>{% endif %}
-                                           {% if site.author.twitter %}<li><a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter"></i></a></li>{% endif %}
-                                           {% if site.author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/"><i class="fa fa-linkedin"></i></a></li>{% endif %}
-                                           {% if site.author.instagram %}<li><a href="https://www.instagram.com/{{ site.author.instagram }}/"><i class="fa fa-instagram"></i></a></li>{% endif %}
-                                        </ul>
-                                    </div>        
-                                    <!-- End Atribute Navigation -->
-
-
-                                    <!-- Start Header Navigation -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-footer">
-                                            <i class="fa fa-bars"></i>
-                                        </button>
-                                        <a class="navbar-brand" href="#brand"><img src="{{ BASE_PATH }}/assets/images/logo-noalfemminicidio.png" class="logo" alt=""></a>
-                                    </div>
-                                    <!-- End Header Navigation -->
-
-                                    <!-- navbar menu -->
-                                    <div class="collapse navbar-collapse" id="navbar-footer">
-                                        <ul class="nav navbar-nav navbar-center">
-                                          {% assign pages_list = site.pages %}
-                                          {% assign group = 'navigation' %}
-                                          {% include JB/pages_list %}
-                                        </ul>
-                                    </div><!-- /.navbar-collapse -->
-                                </div>   
-                            </nav>
-                        </div>
-                        <div class="divider"></div>
-                        <div class="col-md-12">
-                            <div class="main_footer text-center p-top-40 p-bottom-30">
-                                <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Made with 
-                                    <i class="fa fa-heart"></i>
-                                    by 
-                                    <a target="_blank" href="https://antoniotrento.github.io">Antonio Trento</a> 
-                                    2018. Icons by <a target="_blank" href="https://icons8.com/">icons8</a>. 
-                                    All Rights Reserved
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+      <!-- Footer -->
+      <footer class="default-footer text-center">
+        <div class="container">
+          <img class="mb-40 footer-logo" src="img/logo-2.png" alt="">
+          <span class="copy-right dis-blk">Helium - Bootstrap 4 UI Kit Crafted with <i class="fa fa-heart cyan-color"></i> by <a href="https://uideck.com">UIdeck</a></span>
+          <span class="social">
+                  {% if site.author.facebook %}<a href="https://www.facebook.com/{{ site.author.facebook }}/"><i class="fa fa-facebook"></i></a>{% endif %}
+                  {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter"></i></a>{% endif %}
+                  {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/"><i class="fa fa-linkedin"></i></a>{% endif %}
+                  {% if site.author.instagram %}<a href="https://www.instagram.com/{{ site.author.instagram }}/"><i class="fa fa-instagram"></i></a>{% endif %}                            
+              	
+          </span>
+        </div>
+      </footer>
