@@ -18,7 +18,9 @@ canonical: https://fullit.github.io
 ---
 {% include JB/setup %}
 I've create this page to show some markdown sample usefull when you start write your blog.
+
 <!--more-->
+
 {:.bg-danger}
 Test paragraph with **bg-danger** custom class.
 
@@ -30,6 +32,9 @@ Test paragraph with **bg-info** custom class.
 
 {:.bg-warning}
 Test paragraph with **bg-warning** custom class.
+
+{:.bg-success}
+Test paragraph with **bg-success** custom class.
 
 **Test Bold**
 
