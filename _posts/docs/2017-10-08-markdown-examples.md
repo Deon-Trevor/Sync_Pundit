@@ -52,6 +52,7 @@ This is \*\*not\*\* in bold.
 
 [This is a link](https://antoniotrento.github.io)
 
+----
 
 **Default**. Text paragraph basic color
 
@@ -66,6 +67,7 @@ This is \*\*not\*\* in bold.
 {:.text-danger}
 **.text-danger**: Text paragraph using Danger color
 
+----
 
 # Heading h1
 ## Heading h2
@@ -77,6 +79,8 @@ This is \*\*not\*\* in bold.
 {:.sub-title}
 #### Subtitle h class using `{:.sub-title}`
 
+----
+
 {:.lead}
 **A large paragraph** using `{:.lead}`: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
 {:}
@@ -85,6 +89,8 @@ This is \*\*not\*\* in bold.
 **Small Paragraph** using `{:.text-sm}`: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
 {:.text-xs}
 **Extra Small Paragraph** using `{:.text-xs}`: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+
+----
 
 # Alerts (Tests)
 
@@ -117,20 +123,25 @@ vs
 
 When you compare the code for tables, the ability to add a class via markdown attributes makes a world of difference:
 
-Some | Basic | Table {.table .table-striped}
+{.table .table-striped}
+Some | Basic | Table 
 -----|-------|------
 a    | b     | c
 d    | e     | f
 
+
+
 ```
-Some | Basic | Table {.table .table-striped}
+{.table .table-striped}
+Some | Basic | Table 
 -----|-------|------
 a    | b     | c
 d    | e     | f
 ```
 
+----
 
-
+# Copy sample:
 
 # A Study In Scarlet
 
@@ -161,6 +172,7 @@ Medical Department.)
     already improved so far as to be able to walk about the [...]
 p.s. I tend to agree on the adding classes/IDs to every possible element to be overkill.
 
+# In Markdown
 
 ```
 # A Study In Scarlet
@@ -193,10 +205,12 @@ Medical Department.)
 p.s. I tend to agree on the adding classes/IDs to every possible element to be overkill.
 
 ```
+
 
 ----
 ### Other features
 ----
+
 
 # Lists (Uneder construction)
 
