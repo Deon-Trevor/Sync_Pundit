@@ -23,13 +23,13 @@ Test paragraph with **bg-primary** custom class.
 
 {:.bg-success}
 Test paragraph with **bg-success** custom class.
-
+<!--more-->
 {:.bg-info}
 Test paragraph with **bg-info** custom class.
 
 {:.bg-warning}
 Test paragraph with **bg-warning** custom class.
-<!--more-->
+
 **Test Bold**
 
 *Test coursive*
