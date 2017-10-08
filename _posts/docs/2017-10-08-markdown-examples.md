@@ -280,6 +280,7 @@ d    | e     | f
 </div>
 
 ----
+
 {:.sub-title}
 #### in HTML and liquid
 
