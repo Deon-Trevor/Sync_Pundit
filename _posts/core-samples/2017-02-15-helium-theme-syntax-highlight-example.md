@@ -3,7 +3,7 @@ layout: post
 category : lessons
 tagline: "Example how post on Jekyll Helium"
 tags : [jekyll, code]
-img : img2.jpg
+img : syntax-hightlight.jpg
 img2 : 
 img3 : 
 author : Antonio Trento
