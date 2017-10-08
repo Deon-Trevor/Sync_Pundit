@@ -3,13 +3,13 @@ layout: post
 category : lessons
 tagline: "How to test your Jekyll site locally"
 tags : [intro, beginner, jekyll, tutorial]
-img : 3.jpg
-img-mobile : 3-mobile.jpg
-img2 : 2.jpg
-img3 : 3.jpg
+img : img2.jpg
+img-mobile : 
+img2 : 
+img3 : 
 author : Antonio Trento
-title2 : New FullIt Theme
-title3 : Created for jekyll
+title2 : 
+title3 : 
 css: 
 js: 
 bgcolor: ff5a71
