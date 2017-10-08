@@ -75,9 +75,9 @@ canonical: https://heliumjk.github.io
 
       <!-- posts carousel -->
       <section id="blog">
-        <div class="container">
-        {% for post in site.posts %}                        
+        <div class="container">                              
           <div id="posts-carousel" class="owl-carousel">
+           {% for post in site.posts %}     
             <div class="blog block carousel-post">
              {% if post.img %}           
               <img src="{{ BASE_PATH }}/assets/images/{{ post.img }}" alt="">
@@ -86,8 +86,8 @@ canonical: https://heliumjk.github.io
               <p>{{ post.excerpt }}</p>
               <a href="{{ BASE_PATH }}{{ post.url }}">Full Article <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
-          </div>
-         {% endfor %}     
+           {% endfor %}     
+          </div>              
         </div>
       </section>
       <div class="mb-60"></div>      
