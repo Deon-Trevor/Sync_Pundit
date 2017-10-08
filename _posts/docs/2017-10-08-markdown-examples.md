@@ -261,7 +261,6 @@ d    | e     | f
 {:.sub-title}
 #### in markdown
 
-
 ```
 {.table .table-striped}
 Some | Basic | Table 
@@ -270,6 +269,21 @@ a    | b     | c
 d    | e     | f
 ```
 
+----
+# ADS Block
+
+{:.sub-title}
+#### if you edit _confi.yaml file
+
+{% include ads-block.html %}
+
+----
+{:.sub-title}
+#### in markdown
+
+```
+{% include ads-block.html %}
+```
 ----
 
 {:.sub-title}
