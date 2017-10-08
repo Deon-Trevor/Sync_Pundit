@@ -20,7 +20,7 @@ canonical: https://fullit.github.io
 
 ## How you can make an Amazing Website?
 
-Jekyll can give you the possibility to make awesome websites in minutes that are **more faster than major other sites in the world**
+Jekyll can give you the possibility to make awesome websites in minutes that are **more faster than major other sites in the world** <!--more-->
 
 Use this template to generate a great jekyll website via a full of slide system make by fullpage.js and build quick your pages using the last version of Bootstrap 4.
 
