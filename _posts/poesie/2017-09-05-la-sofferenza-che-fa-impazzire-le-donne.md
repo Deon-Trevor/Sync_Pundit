@@ -12,11 +12,10 @@ canonical: https://noalfemminicidio.github.io
 
 ---
 
-“Mia moglie si è ammalata. Era sempre nervosa a causa dei problemi sul lavoro, con i bambini, nella vita personale e dei suoi fallimenti. Aveva perso 14 kg, arrivando a pesare circa 41 kg a 35 anni. 
+“Mia moglie si è ammalata. Era sempre nervosa a causa dei problemi sul lavoro, con i bambini, nella vita personale e dei suoi fallimenti. Aveva perso 14 kg, arrivando a pesare circa 41 kg a 35 anni. <!--more-->
 
 Era davvero scheletrica e piangeva sempre. Non era una donna felice. Soffriva di continui mal di testa, fitte al cuore. Non dormiva bene, si addormentava solo il mattino e si stancava molto velocemente durante il giorno. 
 
-<!--more-->
 La nostra relazione stava per rompersi. La sua bellezza stava svanendo, aveva le borse sotto gli occhi, stava uscendo di testa e aveva smesso di prendersi cura di sé. Rifiutava di girare film e rigettava ogni ruolo. 
 
 Avevo perso le speranze e pensavo che avremmo divorziato presto. Ma poi decisi di agire. Dopo tutto, avevo la donna più bella sulla Terra. 
