@@ -77,9 +77,11 @@ This is \*\*not\*\* in bold.
 ----
 ----
 
-1.  Red
-2.  Green
-3.  Blue
+# Lists (Uneder construction)
+
+1.  Red one
+2.  Green two
+3.  Blue three
 
 
 *   A list item.
@@ -88,64 +90,73 @@ This is \*\*not\*\* in bold.
 
 *   Another item in the list.
 
-LINKS
+# LINKS
 
 Markdown supports two styles for creating links: inline and reference. With both styles, you use square brackets to delimit the text you want to turn into a link.
 
 Inline-style links use parentheses immediately after the link text. For example:
 
-This is an [example link](http://example.com/).
+`This is an [example link](http://example.com/).`
 Output:
 
-<p>This is an <a href="http://example.com/">
-example link</a>.</p>
+`<p>This is an <a href="http://example.com/">
+example link</a>.</p>`
+
 Optionally, you may include a title attribute in the parentheses:
 
-This is an [example link](http://example.com/ "With a Title").
+This is an `[example link](http://example.com/ "With a Title").`
 Output:
 
-<p>This is an <a href="http://example.com/" title="With a Title">
-example link</a>.</p>
+`<p>This is an <a href="http://example.com/" title="With a Title">
+example link</a>.</p>`
+
 Reference-style links allow you to refer to your links by names, which you define elsewhere in your document:
 
-I get 10 times more traffic from [Google][1] than from
+`I get 10 times more traffic from [Google][1] than from
 [Yahoo][2] or [MSN][3].
 
 [1]: http://google.com/        "Google"
 [2]: http://search.yahoo.com/  "Yahoo Search"
-[3]: http://search.msn.com/    "MSN Search"
+[3]: http://search.msn.com/    "MSN Search"`
 Output:
 
-<p>I get 10 times more traffic from <a href="http://google.com/"
+`<p>I get 10 times more traffic from <a href="http://google.com/"
 title="Google">Google</a> than from <a href="http://search.yahoo.com/"
 title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/"
-title="MSN Search">MSN</a>.</p>
+title="MSN Search">MSN</a>.</p>`
+
 The title attribute is optional. Link names may contain letters, numbers and spaces, but are not case sensitive:
 
 I start my morning with a cup of coffee and
 [The New York Times][NY Times].
 
-[ny times]: http://www.nytimes.com/
+[ny times]: http://www.nytimes.com
+
 Output:
 
-<p>I start my morning with a cup of coffee and
-<a href="http://www.nytimes.com/">The New York Times</a>.</p>
-IMAGES
+`<p>I start my morning with a cup of coffee and
+<a href="http://www.nytimes.com/">The New York Times</a>.</p>`
+
+# IMAGES
 
 Image syntax is very much like link syntax.
 
 Inline (titles are optional):
 
-![alt text](/path/to/img.jpg "Title")
+`![alt text](/path/to/img.jpg "Title")`
+
 Reference-style:
 
-![alt text][id]
+`![alt text][id]`
 
-[id]: /path/to/img.jpg "Title"
+`[id]: /path/to/img.jpg "Title"`
+
 Both of the above examples produce the same output:
 
-<img src="/path/to/img.jpg" alt="alt text" title="Title" />
-CODE
+`<img src="/path/to/img.jpg" alt="alt text" title="Title" />`
+
+
+# CODE
 
 In a regular paragraph, you can create code span by wrapping text in backtick quotes. Any ampersands (&) and angle brackets (< or >) will automatically be translated into HTML entities. This makes it easy to use Markdown to write about HTML example code:
 
@@ -163,7 +174,7 @@ Output:
 entites like <code>&amp;#8212;</code>.</p>
 To specify an entire block of pre-formatted code, indent every line of the block by 4 spaces or 1 tab. Just like with code spans, &, <, and > characters will be escaped automatically.
 
-Markdown:
+# Markdown:
 
 If you want your page to validate under XHTML 1.0 Strict,
 you've got to put paragraph tags in your blockquotes:
