@@ -22,6 +22,7 @@ In this tutorial I will teach you *how to test your Jekyll Bootstrap3* site loca
 
 Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site generator".
+<!--more-->
 
 To test your site locally, you'll need
 
@@ -29,7 +30,6 @@ To test your site locally, you'll need
 2. [Jekyll](https://http://jekyllrb.com/)
 3. [github-pages](https://github.com/github/pages-gem) gem
 
-<!--more-->
 
 ### Installing ruby
 
