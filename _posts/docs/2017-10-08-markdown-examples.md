@@ -93,14 +93,17 @@ This is \*\*not\*\* in bold.
 ----
 
 # Alerts
+
 {:.sub-title}
 #### cannot guarantee it work well
 
+
 {:.fa .fa-check }Test fa  fa-check
 
+
 {:.massage-box .alert-success}
-**Test Message alert success** **{:.fa .fa-check }
-**Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
+**Test Message alert success** 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 # Class nesting samples
 ```
