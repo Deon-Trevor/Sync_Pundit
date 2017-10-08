@@ -17,7 +17,7 @@ canonical: https://fullit.github.io
 
 ---
 {% include JB/setup %}
-I've create this page to show some markdown sample usefull when you start write your blog :tada: :fireworks: .
+I've create this page to show some markdown sample usefull when you start write your blog 🎉 🎆.
 
 <!--more-->
 
