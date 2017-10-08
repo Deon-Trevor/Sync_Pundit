@@ -97,21 +97,36 @@ This is \*\*not\*\* in bold.
 #### cannot guarantee it work well
 
 
-{:.fa .fa-check }Test fa  fa-check
+{:.fa .fa-check } **Test fa  fa-check**
 
 
 {:.massage-box .alert-success}
 **Test Message alert success** 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
+{:.massage-box .alert-info}
+**Test Message alert info** 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
-{:.label .label-default-filled}Default
+{:.massage-box .alert-danger}
+**Test Message alert danger** 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
-{:.label .label-success-filled}Success
+{:.massage-box .alert-warning}
+**Test Message alert warning** 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
-{:.label .label-info-filled}Info
+{:.label .label-default-filled}
+Default
 
-{:.label .label-warning-filled}Warning
+{:.label .label-success-filled}
+Success
+
+{:.label .label-info-filled}
+Info
+
+{:.label .label-warning-filled}
+Warning
 
 {:.label .label-danger-filled} 
 Danger
