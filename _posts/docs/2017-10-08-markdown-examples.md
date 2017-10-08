@@ -69,3 +69,20 @@ This is \*\*not\*\* in bold.
 #### Heading h4
 ##### Heading h5
 ###### Heading h6
+
+----
+----
+
+*   Candy.
+*   Gum.
+*   Booze.
+this:
+
++   Candy.
++   Gum.
++   Booze.
+and this:
+
+-   Candy.
+-   Gum.
+-   Booze.
