@@ -160,7 +160,8 @@ Medical Department.)
 p.s. I tend to agree on the adding classes/IDs to every possible element to be overkill.
 
 
-`# A Study In Scarlet
+```
+# A Study In Scarlet
 
 ## PART I.
 
@@ -188,7 +189,9 @@ Medical Department.)
     sufferers, to the base hospital at Peshawar. Here I rallied, and had 
     already improved so far as to be able to walk about the [...]
 p.s. I tend to agree on the adding classes/IDs to every possible element to be overkill.
-`
+
+```
+
 ----
 ### Other features
 ----
