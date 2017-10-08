@@ -123,6 +123,67 @@ a    | b     | c
 d    | e     | f`
 
 
+
+
+# A Study In Scarlet
+
+## PART I.
+
+(Being a reprint from the reminiscences of John H. Watson, M.D., late of the Army 
+Medical Department.)
+
+1.  ### Mr. Sherlock Holmes
+
+    In the year 1878 I took my degree of Doctor of Medicine of the 
+    University of London, and proceeded to Netley to go through 
+    the course prescribed for surgeons in the army. Having completed 
+    my studies there, I was duly attached to the Fifth Northumberland 
+    Fusiliers as Assistant Surgeon. The regiment was stationed in 
+    India at the time, and before I could join it, the second [...]
+
+    The campaign brought honours and promotion to many, but for me 
+    it had nothing but misfortune and disaster. I was removed from my 
+    brigade and attached to the Berkshires, with whom I served at 
+    the fatal battle of Maiwand. There I was struck on the [...]            {.randomClass}
+
+2.  ### More content
+
+    Worn with pain, and weak from the prolonged hardships which 
+    I had undergone, I was removed, with a great train of wounded 
+    sufferers, to the base hospital at Peshawar. Here I rallied, and had 
+    already improved so far as to be able to walk about the [...]
+p.s. I tend to agree on the adding classes/IDs to every possible element to be overkill.
+
+
+`# A Study In Scarlet
+
+## PART I.
+
+(Being a reprint from the reminiscences of John H. Watson, M.D., late of the Army 
+Medical Department.)
+
+1.  ### Mr. Sherlock Holmes
+
+    In the year 1878 I took my degree of Doctor of Medicine of the 
+    University of London, and proceeded to Netley to go through 
+    the course prescribed for surgeons in the army. Having completed 
+    my studies there, I was duly attached to the Fifth Northumberland 
+    Fusiliers as Assistant Surgeon. The regiment was stationed in 
+    India at the time, and before I could join it, the second [...]
+
+    The campaign brought honours and promotion to many, but for me 
+    it had nothing but misfortune and disaster. I was removed from my 
+    brigade and attached to the Berkshires, with whom I served at 
+    the fatal battle of Maiwand. There I was struck on the [...]            {.randomClass}
+
+2.  ### More content
+
+    Worn with pain, and weak from the prolonged hardships which 
+    I had undergone, I was removed, with a great train of wounded 
+    sufferers, to the base hospital at Peshawar. Here I rallied, and had 
+    already improved so far as to be able to walk about the [...]
+p.s. I tend to agree on the adding classes/IDs to every possible element to be overkill.
+`
 ----
 ### Other features
 ----
