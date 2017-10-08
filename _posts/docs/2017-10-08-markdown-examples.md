@@ -270,13 +270,13 @@ d    | e     | f
 ```
 
 ----
-# ADS Block
+# Dynamic ADS Block
 
 {:.sub-title}
-#### if you edit _confi.yaml file
+#### autoresize in base of the  if you edit _confi.yaml file
 
 <div>
-{% include ads-block.html %}
+&#123;&#37; include ads-block.html &#37;&#125;
 </div>
 
 ----
