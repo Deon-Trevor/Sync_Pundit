@@ -276,7 +276,7 @@ d    | e     | f
 #### It autoresize in base of the container dimensions, avaible if you edit _confi.yaml file
 
 <div>
-&#123;&#37; include ads-block.html &#37;&#125;
+{% include ads-block.html %}
 </div>
 
 ----
@@ -286,7 +286,7 @@ d    | e     | f
 
 ```
 <div>
-{% include ads-block.html %}
+&#123;&#37; include ads-block.html &#37;&#125;
 <div>
 ```
 ----
