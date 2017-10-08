@@ -83,8 +83,7 @@ This is \*\*not\*\* in bold.
 
 {:.lead}
 **A large paragraph** using `{:.lead}`: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
-{:}
-**Regular Paragraph** using `{:}`: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+**Regular Paragraph**: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
 {:.text-sm}
 **Small Paragraph** using `{:.text-sm}`: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
 {:.text-xs}
