@@ -17,13 +17,14 @@ canonical: https://fullit.github.io
 
 ---
 {% include JB/setup %}
-
+I've create this page to show some markdown sample usefull when you start write your blog.
+<!--more-->
 {:.bg-primary}
 Test paragraph with **bg-primary** custom class.
 
 {:.bg-success}
 Test paragraph with **bg-success** custom class.
-<!--more-->
+
 {:.bg-info}
 Test paragraph with **bg-info** custom class.
 
