@@ -90,10 +90,6 @@ lantoniotrento@gmail.com
   {% endif %}
 
 
-<!-- ********************* Grads SCRIPTING ******************************-->
-<!--Custom script loaded by children page-->
-{% if page.js %}<script type="text/javascript" src="text/css" href="{{ BASE_PATH }}/assets/js/custom/{{ page.js }}" />{% endif %}
-
 
 
         <!-- JS includes -->
@@ -111,5 +107,12 @@ lantoniotrento@gmail.com
         <script src="{{ BASE_PATH }}/assets/js/scrolling-nav.js"></script>
         <script src="{{ BASE_PATH }}/assets/js/tether.min.js"></script>
         <script src="{{ BASE_PATH }}/assets/js/bootstrap.min.js"></script>
+
+	<!-- ********************* Grads SCRIPTING ******************************-->
+	<!--Custom script loaded by children page-->
+	{% if page.js %}<script type="text/javascript" src="text/css" href="{{ BASE_PATH }}/assets/js/custom/{{ page.js }}" />{% endif %}
+
+
+	  
   </body>
 </html>
