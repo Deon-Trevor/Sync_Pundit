@@ -6,12 +6,11 @@ tags : [blog, posts, post]
 author : Antonio Trento
 css: 
 js:
-keywords: noalfemminicidio, femminicidio, blog, aiuto, violenza, donne, no-profit
-canonical: https://noalfemminicidio.github.io/blog
+keywords: bootstrap4, UI kit, jekyll
+canonical: https://heliumjk.github.io/blog
 ---
 {% include JB/setup %}
 
-<!-- Change the "about information" contained in /_includes/themes/bootstrap/index.html  -->
 
 {% for post in site.posts %}
 	  <div class="blog-block post-content-area">
@@ -25,12 +24,4 @@ canonical: https://noalfemminicidio.github.io/blog
             </div>
           </div>
 {% endfor %}
-
-
-
-               <!--  TAGS And CATEGORIES
-			<p class="lead">
-                    <strong>Tags: {{post.tags | array_to_sentence_string}}. <span class="glyphicon glyphicon-time"></span> Post del {{ post.date | date_to_string }}</strong>
-                </p>-->
-	
 
