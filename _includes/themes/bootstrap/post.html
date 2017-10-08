@@ -1,70 +1,49 @@
-            <!--Home Sections-->
+<!-- Post header -->
+<div class="header-style-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="hero-content-v2">
+                <h3>{{ page.title }}</h3>
+                {% if page.tagline %}<p>
+                          {{ page.tagline }}
+                </p>{% endif %}
+                <a href="#blog" class="page-scroll btn btn-lg btn-default-filled">Read Post</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              {% if page.img %}<figure>
+                <img src="{{ BASE_PATH }}/assets/images/{{ page.img }}" alt="">
+              </figure>{% endif %}
+            </div>
 
-            <section id="home" class="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_home">
-                            <div class="col-md-6">
-                                <div class="home_text">
-                                    <h1 class="text-white">{{ page.title }}</h1>
-                                    {% if page.tagline %} <p class="text-white">{{ page.tagline }}</p>{% endif %}                                   
-                                </div>
-
-                                <div class="home_btns m-top-40">
-                                    <a href="#blog" class="btn btn-danger m-top-20">Leggi il post</a>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="phone_one phone_attr1 text-center sm-m-top-50">
-                                    <div class="attr_deg">No</div>
-                                    <div class="attr_rio text-uppercase">No</div>
-                                    <div class="attr_sun text-uppercase text-white">Violence</div>
-                                    <div class="attr_lon text-uppercase text-white">Violenza</div>
-                                    {% if page.img %}<img class="img-responsive" src="{{ BASE_PATH }}/assets/images/{{ page.img }}" alt="" />{% endif %}
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="scrooldown">
-                            <a href="#blog"><i class="fa fa-chevron-down"></i></a>
-                        </div>
-
-                    </div><!--End off row-->
-                </div><!--End off container -->
-            </section> <!--End off Home Sections-->
-
-
-
-
-    <br />
-    <br />
-
-
-     <div id = "blog" class="container">      
-      <div class="row">
-
-        <div class="col-sm-8 blog-main post">
-
-          {% include ads-block.html %}
-          <br />
-           {{ content }}
-          <br />
-          {% include ads-block.html %}
-          <br />    
-
-          {% include JB/comments %}
-          
-
+          </div>
         </div>
-
-        <div class="col-sm-4 blog-sidebar">
-          {% include side-bar.html %}
-        </div>          
       </div>
-     </div>    
 
 
 
+<!-- Post content+sidebar -->
+
+<div class="mb-60"></div>
+
+  <!-- Blog content + sidebar -->
+  <section id="post" class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-9">
+          {% include ads-block.html %}
+          <div class="mb-60"></div>
+           {{ content }}
+          <div class="mb-60"></div>
+          {% include ads-block.html %}
+          <div class="mb-60"></div> 
+          {% include JB/comments %}                    
+        </div>                    
+        <div class="col-sm-12 col-md-3">
+          {% include side-bar.html %}
+        </div>
+      </div>
+     </div>
+   </section>
 
