@@ -94,9 +94,10 @@ This is \*\*not\*\* in bold.
 
 # Alerts (Tests)
 
+{:.fa .fa-check }Test fa  fa-check
 
 {:.massage-box .alert-success}
-**{:.fa .fa-check }** **Test Message alert success
+**Test Message alert success
 **Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 # Class nesting samples
