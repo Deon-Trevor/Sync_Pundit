@@ -1,8 +1,8 @@
 ---
 layout: post
 category : lessons
-tagline: "Using FullIt.github.io"
-tags : [bootstrap, web desing, jekyll]
+tagline: "Using heliumjk.github.io"
+tags : [bootstrap 4, web desing, jekyll]
 img : img2.jpg
 img-mobile : 
 img2 : 
@@ -13,14 +13,14 @@ title3 : Make it a full of slides
 css: 
 js: 
 bgcolor: ff5a71
-keywords: fullit, web desing, css, html, bootstrap
+keywords: helium, web desing, css, html, bootstrap 4
 canonical: https://fullit.github.io
 ---
 {% include JB/setup %}
 
-## How you can make an Amazing Website?
-
 Jekyll can give you the possibility to make awesome websites in minutes that are **more faster than major other sites in the world** <!--more-->
+
+## How you can make an Amazing Website?
 
 Use this template to generate a great jekyll website via a full of slide system make by fullpage.js and build quick your pages using the last version of Bootstrap 4.
 
