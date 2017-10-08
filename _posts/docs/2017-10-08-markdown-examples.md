@@ -117,6 +117,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 ----
+{:.sub-title}
+#### in markdown
 ```
 {:.massage-box .alert-success}
 **Test Message alert success** 
@@ -152,6 +154,8 @@ Warning
 Danger
 
 ----
+{:.sub-title}
+#### in markdown
 ```
 {:.label .label-default-filled}
 Default
@@ -194,6 +198,8 @@ vs
 When you compare the code for tables, the ability to add a class via markdown attributes makes a world of difference:
 
 {.table .table-striped}
+
+
 Some | Basic | Table 
 -----|-------|------
 a    | b     | c
