@@ -87,6 +87,8 @@ This is \*\*not\*\* in bold.
 **Extra Small Paragraph** using `{:.text-xs}`: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
 
 # Alerts (Tests)
+
+
 {:.massage-box .alert-success}
 **
 {:.fa .fa-check }
@@ -95,11 +97,13 @@ Test Message alert success
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 # Class nesting samples
-`*   list item
+```
+*   list item
 
 *   list item {.classA}
     {.classB}
-{.classC}`
+{.classC}
+```
 
 
 `{.some-class .proposed-syntax}`
@@ -107,9 +111,11 @@ A paragraph of text.
 
 vs
 
-`<p class="some-class" markdown="1">
+```
+<p class="some-class" markdown="1">
   A paragraph of text.
-</p>`
+</p>
+```
 
 
 When you compare the code for tables, the ability to add a class via markdown attributes makes a world of difference:
@@ -119,10 +125,12 @@ Some | Basic | Table {.table .table-striped}
 a    | b     | c
 d    | e     | f
 
-`Some | Basic | Table {.table .table-striped}
+```
+Some | Basic | Table {.table .table-striped}
 -----|-------|------
 a    | b     | c
-d    | e     | f`
+d    | e     | f
+```
 
 
 
