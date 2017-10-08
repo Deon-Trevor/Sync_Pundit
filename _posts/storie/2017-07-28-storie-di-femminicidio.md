@@ -10,8 +10,8 @@ js:
 keywords: poesie, poesia, noalfemminicidio, donne
 canonical: https://noalfemminicidio.github.io
 ---
-Femminicidio è dolore e morte. Ma le tante storie personali delle donne vittime della violenza diventano anche il territorio su cui si scontrano le opinioni, i luoghi comuni della sociologia da salotto – o da bar –, il racconto della cronaca ad effetto, le prese di posizione inamovibili e una mentalità arcaica che trova nella moderna società dei consumi ragioni contorte per continuare a schiacciare le donne, i deboli e i marginali. 
-<!--more-->
+Femminicidio è dolore e morte.<!--more--> Ma le tante storie personali delle donne vittime della violenza diventano anche il territorio su cui si scontrano le opinioni, i luoghi comuni della sociologia da salotto – o da bar –, il racconto della cronaca ad effetto, le prese di posizione inamovibili e una mentalità arcaica che trova nella moderna società dei consumi ragioni contorte per continuare a schiacciare le donne, i deboli e i marginali. 
+
 Per quanto si cerchi ancora di raccontarli come casi singoli di follia, i femminicidi appaiono sempre più chiaramente come un fenomeno culturale, il loro numero nel nostro paese parla chiaro. Mentre si continua a minimizzare, le parole hanno un peso enorme e ancora troppo poco considerato da chi ha la responsabilità di raccontare pubblicamente questi difficili rapporti tra uomini e donne.
 
 Michela Murgia e la giornalista e scrittrice Loredana Lipperini nel libro “L'ho uccisa perché l'amavo. Falso!” (Laterza, 104 pagine, 9 euro) smontano i luoghi comuni più pervicaci, utilizzando il sistema della confutazione messo a punto nella collana “Idòla” di Laterza per controbattere, argomento per argomento, anche altre frasi fatte e argomenti stantii. Michela Murgia è sempre stata attiva nella battaglia sulla parità e contro la violenza sulle donne.
