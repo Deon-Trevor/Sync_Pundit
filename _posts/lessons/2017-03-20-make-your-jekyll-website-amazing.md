@@ -18,7 +18,9 @@ canonical: https://fullit.github.io
 ---
 {% include JB/setup %}
 
-Jekyll can give you the possibility to make awesome websites in minutes that are **more faster than major other sites in the world** <!--more-->
+Jekyll can give you the possibility to make awesome websites in minutes.
+<!--more-->
+That are **more faster than major other sites in the world** 
 
 ## How you can make an Amazing Website?
 
