@@ -19,7 +19,8 @@ canonical: https://fullit.github.io
 {% include JB/setup %}
 
 
-{:.bg-primary}Test paragraph with a custom class.
+{:.bg-primary}
+Test paragraph with a custom class.
 
 **Test Bold**
 
