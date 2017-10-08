@@ -12,7 +12,7 @@ title3 :
 css: 
 js: 
 bgcolor: ff5a71
-keywords: fullpage, html, css, landing page, jekyll, ruby, web marketing, advertising
+keywords: helium, html, css, landing page, jekyll, ruby, web marketing, advertising
 canonical: https://fullit.github.io
 
 ---
