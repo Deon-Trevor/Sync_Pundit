@@ -1,47 +1,8 @@
-            <!--Home Sections-->
-
-            <section id="home" class="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_home">
-                            <div class="col-md-6">
-                                <div class="home_text">
-                                    <h1 class="text-white">Tutela gli abusati.</h1>
-                                    <p class="text-white">La gran parte di vittima di abusi è minorenne! Per tutelarli abbiamo architettato un sistema di pagamento sicuro che permette l'acquiso di una determinata gamma di prodotti, di modo da controllare dove i ragazzi spendono i prorpi soldi.</p>
-                                </div>
-
-                                <div class="home_btns m-top-40">
-                                    <a href="https://gofoundme.com/noalfemminicidio" target="_blank" class="btn btn-danger m-top-20">Dona</a>
-                                    <a href="https://patreon.com/noalfemminicidio" target="_blank" class="btn btn-primary m-top-20">Patreon</a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="phone_one phone_attr1 text-center sm-m-top-50">
-                                    <div class="attr_deg">Aiuto</div>
-                                    <div class="attr_rio text-uppercase">Help</div>
-                                    <div class="attr_sun text-uppercase text-white">Dona</div>
-                                    <div class="attr_lon text-uppercase text-white">Patreon</div>
-                                    <img src="{{ BASE_PATH }}/assets/images/01-image-noalfemminicidio.jpg" alt="" />
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="scrooldown">
-                            <a href="#blog"><i class="fa fa-chevron-down"></i></a>
-                        </div>
-
-                    </div><!--End off row-->
-                </div><!--End off container -->
-            </section> <!--End off Home Sections-->
-                </br></br></br>
-
-
-
-     <div id = "blog" class="container">      
+  <!-- Blog content + sidebar -->
+  <section class="blog">
+    <div class="container">
       <div class="row">
-
-        <div class="col-sm-8 blog-main post">
+        <div class="col-sm-12 col-md-9">
 
            {{ content }}     
 
@@ -50,11 +11,12 @@
 
         </div>
 
-        <div class="col-sm-4 blog-sidebar">
+        <div class="col-sm-12 col-md-3">
           {% include side-bar.html %}
         </div>          
       </div>
      </div>
+   </section>
           
 
 
