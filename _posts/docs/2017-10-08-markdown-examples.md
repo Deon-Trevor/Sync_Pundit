@@ -204,11 +204,9 @@ vs
   A paragraph of text.
 </p>
 ```
-
+## Tables
 
 When you compare the code for tables, the ability to add a class via markdown attributes makes a world of difference:
-
-{.table .table-striped}
 
 
 Some | Basic | Table 
@@ -216,6 +214,8 @@ Some | Basic | Table
 a    | b     | c
 d    | e     | f
 
+{:.sub-title}
+#### in markdown
 
 
 ```
@@ -228,7 +228,9 @@ d    | e     | f
 
 ----
 
-# Copy sample:
+{:.sub-title}
+# Copy Sample
+
 
 # A Study In Scarlet
 
