@@ -275,14 +275,18 @@ d    | e     | f
 {:.sub-title}
 #### if you edit _confi.yaml file
 
+<div>
 {% include ads-block.html %}
+</div>
 
 ----
 {:.sub-title}
-#### in markdown
+#### in HTML and liquid
 
 ```
+<div>
 {% include ads-block.html %}
+<div>
 ```
 ----
 
