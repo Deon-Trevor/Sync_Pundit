@@ -284,10 +284,11 @@ d    | e     | f
 {:.sub-title}
 #### in HTML and liquid
 
-
 ```
 <div>
+```
 &#123;&#37; include ads-block.html &#37;&#125;
+```
 <div>
 ```
 ----
