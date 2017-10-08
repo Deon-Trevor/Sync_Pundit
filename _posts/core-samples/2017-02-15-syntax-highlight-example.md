@@ -1,14 +1,14 @@
 ---
 layout: post
 category : lessons
-tagline: "Example how post on Jekyll FullIt"
+tagline: "Example how post on Jekyll Helium"
 tags : [jekyll, code]
 img : img2.jpg
 img2 : 
 img3 : 
 author : Antonio Trento
-title2 : Ciao bello
-title3 : Ciao fantastico
+title2 : 
+title3 : 
 css: 
 js: 
 bgcolor: ff5a71
