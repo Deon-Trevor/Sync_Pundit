@@ -21,6 +21,12 @@ I've create this page to show some markdown sample usefull when you start write 
 
 <!--more-->
 
+# Examples
+
+{:.sub-title}
+#### in markdown cannot guarantee it work well
+
+
 {:.bg-danger}
 Test paragraph with **bg-danger** custom class.
 
@@ -33,8 +39,24 @@ Test paragraph with **bg-info** custom class.
 {:.bg-warning}
 Test paragraph with **bg-warning** custom class.
 
+----
+{:.sub-title}
+#### in markdown
+```
+{:.bg-danger}
+Test paragraph with **bg-danger** custom class.
+
 {:.bg-success}
 Test paragraph with **bg-success** custom class.
+
+{:.bg-info}
+Test paragraph with **bg-info** custom class.
+
+{:.bg-warning}
+Test paragraph with **bg-warning** custom class.
+
+```
+----
 
 **Test Bold**
 
@@ -94,6 +116,14 @@ This is \*\*not\*\* in bold.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Po16lsLfpMk" frameborder="0" allowfullscreen></iframe>
 
 ----
+{:.sub-title}
+#### in HTML
+```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Po16lsLfpMk" 
+frameborder="0" allowfullscreen></iframe>
+```
+----
+## Paragraphs
 
 {:.lead}
 **A large paragraph** using `{:.lead}`: But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
