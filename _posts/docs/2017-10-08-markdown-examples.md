@@ -105,6 +105,18 @@ This is \*\*not\*\* in bold.
 **Test Message alert success** 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
+
+{:.label .label-default-filled}Default
+
+{:.label .label-success-filled}Success
+
+{:.label .label-info-filled}Info
+
+{:.label .label-warning-filled}Warning
+
+{:.label .label-danger-filled} 
+Danger
+
 # Class nesting samples
 ```
 *   list item
