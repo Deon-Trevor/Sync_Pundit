@@ -36,4 +36,7 @@ This is \*\*not\*\* in bold.
 
 > This is quoted
 
+1. with
+1. numbers
+
 [This is a link](https://antoniotrento.github.io)
