@@ -22,19 +22,19 @@ post_limit: 5
 
 
 title : Helium Jekyll
-tagline: Il blog contro la violenza sulle donne
+tagline: Bootstrap 4 UI kit for jekyll
 author : 
   name : heliumjk
   email : lantoniotrento@gmail.com
   github : antoniotrento
-  twitter : no__violence
-  facebook: noalfemminicidio
+  twitter : lantoniotrento
+  facebook: lantoniotrento
   linkedin: antoniotrento
-  instagram: no_violence
+  instagram: lantoniotrento
   pinterest: antoniotrento
   feedburner : 
 
-twitter_username: no__violence
+twitter_username: lantoniotrento
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
