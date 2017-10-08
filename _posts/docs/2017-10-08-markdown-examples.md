@@ -117,8 +117,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
 ----
+
 {:.sub-title}
 #### in markdown
+
 ```
 {:.massage-box .alert-success}
 **Test Message alert success** 
@@ -138,6 +140,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 ```
 ----
 
+# Labels
+
+{:.sub-title}
+#### in markdown cannot guarantee it work well
+
+
 {:.label .label-default-filled}
 Default
 
@@ -154,8 +162,10 @@ Warning
 Danger
 
 ----
+
 {:.sub-title}
 #### in markdown
+
 ```
 {:.label .label-default-filled}
 Default
@@ -173,6 +183,7 @@ Warning
 Danger
 ```
 ----
+
 # Class nesting samples
 ```
 *   list item
