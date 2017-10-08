@@ -94,10 +94,10 @@ This is \*\*not\*\* in bold.
 # Alerts
 
 {:.sub-title}
-#### cannot guarantee it work well
+#### in markdown cannot guarantee it work well
 
 
-{:.fa .fa-check } **Test fa  fa-check**
+If are you looking to html version explore [Labels Alerts]({{ BASE_PATH/labels-alerts }}) and [Components]({{ BASE_PATH/components }})
 
 
 {:.massage-box .alert-success}
@@ -116,6 +116,26 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 **Test Message alert warning** 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
 
+----
+```
+{:.massage-box .alert-success}
+**Test Message alert success** 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
+
+{:.massage-box .alert-info}
+**Test Message alert info** 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
+
+{:.massage-box .alert-danger}
+**Test Message alert danger** 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
+
+{:.massage-box .alert-warning}
+**Test Message alert warning** 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt a in, ullam.
+```
+----
+
 {:.label .label-default-filled}
 Default
 
@@ -131,6 +151,24 @@ Warning
 {:.label .label-danger-filled} 
 Danger
 
+----
+```
+{:.label .label-default-filled}
+Default
+
+{:.label .label-success-filled}
+Success
+
+{:.label .label-info-filled}
+Info
+
+{:.label .label-warning-filled}
+Warning
+
+{:.label .label-danger-filled} 
+Danger
+```
+----
 # Class nesting samples
 ```
 *   list item
