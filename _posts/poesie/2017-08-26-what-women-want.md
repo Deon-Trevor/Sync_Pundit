@@ -3,12 +3,12 @@ layout: post
 category : poesie
 tagline: "Il web contro la violenza sulle donne"
 tags : [poesie]
-img : what-women-want.jpg
+img : img2.jpg
 author : Antonio Trento
 css: 
 js: 
 keywords: poesie, poesia, noalfemminicidio, donne
-canonical: https://noalfemminicidio.github.io
+canonical: https://heliumjk.github.io
 
 ---
 {% include JB/setup %}
