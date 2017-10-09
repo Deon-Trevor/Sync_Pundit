@@ -86,12 +86,16 @@ This is \*\*not\*\* in bold.
 
 {:.text-primary}
 **.text-primary**: Text paragraph using Primary color
+
 {:.text-success}
 **.text-success**: Text paragraph using Success color
+
 {:.text-info}
 **.text-info**: Text paragraph using Info Color
+
 {:.text-warning}
 **.text-warning**: Text paragraph using Warning color
+
 {:.text-danger}
 **.text-danger**: Text paragraph using Danger color
 
