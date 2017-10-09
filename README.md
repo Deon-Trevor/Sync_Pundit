@@ -83,5 +83,5 @@ All parts of helium Jekyll theme are free to use and abuse under the open-source
 Im [Antonio Trento](https://antoniotrento.github.io) and I'm looking for funds to be able to open my IT development company with many on-site projects, unfortunately they are hardly feasible without collaboration and an economic base.
 
 If you want to contribute you can donate ethereum or bitcoin:
-- (Donate Bitcoins)[https://blockchain.info/address/1B9rDoFCndbsKXL9QiefUcUGUbJH9Y1i6M]
+- [Donate Bitcoins](https://blockchain.info/address/1B9rDoFCndbsKXL9QiefUcUGUbJH9Y1i6M)
 - Donate Ethereum on this wallet 0x657d7b5d541c1c4a4E7F04EF3F0ECDa3c4299D8a
