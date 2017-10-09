@@ -3,7 +3,7 @@ layout: post
 category : lessons
 tagline: "Hello world post on helium jekyll"
 tags : [intro, beginner, jekyll, tutorial]
-img : hello-world.jpg
+img : helloworld.jpg
 img-mobile : 
 img2 : 
 img3 : 
