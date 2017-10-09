@@ -3,18 +3,16 @@
 
 Helium is a fast, modern and configurable [Jekyll](http://jekyllrb.com/) theme with some tricks up it's sleeve. It has a live theme switcher and it's main blog layout display prominent hero images for posts with colored overlays and nice animations.
 
-![light theme](assets/images/helium-screenshot1.jpg)
-![dark theme](assets/images/helium-screenshot.jpg)
+![helium theme](assets/images/helium-screenshot1.jpg)
+![helium sample](assets/images/helium-screenshot.jpg)
 
 ## Features
 Though minimalistic-looking by nature, dactl is easily configurable and includes quite a lot of niceties:
 
 Main features:
-* Customizable blog layout - choose how your posts will be displayed
-* Light/Dark live theme switcher
-* Inline footnotes using [Barefoot](https://github.com/philgruneich/barefoot)
-* [IcoMoon](https://icomoon.io/) custom icon set (~4kb)
-* Typography and components size set in `rem` and `em` which makes them easily scalable
+* [Bootstrap 4](https://v4-alpha.getbootstrap.com/)
+* [Font Awesome](http://fontawesome.io/)
+* 100+ UI Blocks
 * Responsive design
 
 Jekyll-specific features:
