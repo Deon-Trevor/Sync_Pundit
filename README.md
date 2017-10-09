@@ -27,7 +27,8 @@ Other features:
 * Landing page samples
 * Tags functionality and tags pages
 * Link posts functionality
-* Mobile slider scrolling 
+* Mobile slider scrolling
+* Emoji support ⚡️⚡️⚡️ by copy paste from [getemoji](http://getemoji.com/)
 
 Some of the features listed above can be easily configured or disabled by you.
 
