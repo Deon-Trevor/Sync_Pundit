@@ -82,6 +82,7 @@ All parts of helium Jekyll theme are free to use and abuse under the open-source
 ## TO DO
 - [ ] Add Ads Block to home page 
 - [ ] Minimize `.css` in `<head>` and all images for faster load times
+- [ ] 404 page styles
 - [ ] Create hightlight style for code parts
 
 ## Help out
