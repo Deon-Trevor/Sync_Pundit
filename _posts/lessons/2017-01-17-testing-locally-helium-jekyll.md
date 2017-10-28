@@ -147,7 +147,7 @@ Read the complete tutorial on <http://jekyllrb.com/docs/usage/>.
 #### #Code
 ``` HTML
 	<div class="video-container">
-	<iframe width="100%" height="auto" src="https://www.youtube.com/embed/ikbYpAHkurs?ecver=1" frameborder="0" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ikbYpAHkurs?ecver=1" frameborder="0" allowfullscreen></iframe>
 	</div>
 
 ```
