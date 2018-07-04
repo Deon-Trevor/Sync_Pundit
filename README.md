@@ -94,4 +94,3 @@ Im [Antonio Trento](https://antoniotrento.github.io) and I'm looking for funds t
 
 If you want to contribute you can donate ethereum or bitcoin:
 - [Donate Bitcoins](https://blockchain.info/address/1B9rDoFCndbsKXL9QiefUcUGUbJH9Y1i6M)
-- Donate Ethereum on this wallet 0x657d7b5d541c1c4a4E7F04EF3F0ECDa3c4299D8a
