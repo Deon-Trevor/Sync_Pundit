@@ -1,22 +1,20 @@
 
 title: My Resume
-url: 'http://junlulocky.com'
-baseurl: '/PanelCV' #change it according to your repository name
+url: 'https://deon-trevor.github.io'
+baseurl: #change it according to your repository name
 
 
 
 # Profile information
-yourname: Brown Smith  ## put your name
-title: 'GRAPHIC &amp; WEB DESIGNER'  ## your title
-location: San Francisco , CA
+yourname: Deon Trevor Mpofu
+title: 'Cyber Security Analyst' 
+location: Gaborone, Botswana
 
 
 ## Social Profiles
-facebook: http://www.facebook.com  ## your facebook account url
-twitter: http://www.twitter.com  ## your twitter account url
-linkedin: http://www.linkedin.com  ## your linkedin account url
-dribbble: http://www.dribble.com  ## you dribbble account url
-foursquare: http://www.foursquare.com  ## your foursquare account url
+linkedin: https://www.linkedin.com/in/deon-trevor-mpofu
+twitter: https://twitter.com/DeonMpofu
+facebook: https://www.facebook.com/trevordeon.mpofu
 
 
 
