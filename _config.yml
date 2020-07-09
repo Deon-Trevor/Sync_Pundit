@@ -5,8 +5,6 @@ description: Deon Trevor Mpofu. CEH| ECSA| Phishing Analyst| Cyber Security Anal
 linkedin_username: deon-trevor-mpofu
 twitter_username: DeonMpofu
 github_username: Deon-Trevor
-gems:
-	-jekyll-feed
 exclude:
 	-Gemfile
 	-Gemfile.lock
