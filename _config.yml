@@ -2,12 +2,12 @@
 title: My Resume
 url: 'https://deon-trevor.github.io'
 baseurl: #change it according to your repository name
-
+description: Testing
 
 
 # Profile information
-yourname: Deon Trevor Mpofu 
-title: 'Cyber Security Analyst'  
+yourname: Deon Trevor Mpofu
+title: 'Cyber Security Analyst'
 location: Gaborone, Botswana
 
 
