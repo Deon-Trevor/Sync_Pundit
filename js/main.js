@@ -1,0 +1,33 @@
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+    $("#cv-1").show();
+    $("#cv-2").hide();
+    $("#cv-3").hide();
+    $("#cv-4").hide();
+  });
+
+  $("#btn-1").click(function(){
+    $("#cv-1").show();
+    $("#cv-2").hide();
+    $("#cv-3").hide();
+    $("#cv-4").hide();
+  });
+  $("#btn-2").click(function(){
+    $("#cv-2").show();
+    $("#cv-1").hide();
+    $("#cv-3").hide();
+    $("#cv-4").hide();
+  });
+  $("#btn-3").click(function(){
+    $("#cv-3").show();
+    $("#cv-2").hide();
+    $("#cv-1").hide();
+    $("#cv-4").hide();
+  });
+  $("#btn-4").click(function(){
+    $("#cv-4").show();
+    $("#cv-2").hide();
+    $("#cv-3").hide();
+    $("#cv-1").hide();
+  });
+  new WOW().init();
