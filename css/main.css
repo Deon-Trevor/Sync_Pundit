@@ -1,0 +1,229 @@
+@font-face {
+    src: url('font/digital-7.ttf'); 
+    font-family: 'lovelyFont';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lovelyFont';
+    color: white;
+}
+body{
+    background-color: #333;
+}
+.wrapper{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: cover;
+}
+#home-body{
+    width: 100%;
+    max-width: 1700px;
+    background-color: #333;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+
+p,td,a{
+    font-size: 18px;
+}
+tr{
+    border-bottom: 1px solid rgb(47, 255, 134);
+}
+a,li,p,button{
+    font-weight: 400;
+}
+h1,h2,h3,h4{
+    font-weight: 700;
+}
+nav{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(0, 0, 0, 0.129);
+    min-height: 5vh;
+}
+.b_s_1{
+    min-height:95vh;
+     background-image: url('../images/IMG_20200712_092819_614.jpg');
+    background-size: cover;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.h_s_1 .col{
+    padding: 0;
+}
+.cv-img{
+    height: 95vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+.container{
+    background: rgba(0, 0, 0, 0.671);
+}
+h3,p{
+    color: white;
+}
+.date{
+    color: rgb(47, 255, 134);
+    text-transform: uppercase;
+}
+.bolg-div{
+    padding: 30px;
+    padding-top: 20px;
+}
+.hr{
+    height: 1px;
+    width: 100%;
+    background-color: indianred;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
+.bolg-div p{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.more-btn{
+    color: rgb(28, 160, 204);
+    border:1px solid rgb(28, 160, 204);
+    padding: 7px 20px;
+}
+.cat{
+    color: rgb(2, 119, 51);
+    border: 2px solid rgb(26, 117, 64);
+    padding: 10px 20px;
+    margin: 5px;
+    background: transparent;
+}
+.side-bar h4,li{
+    color: white;
+}
+.button-col{
+    width: 100%;
+    min-height: 100vh;
+    background:rgba(0, 0, 0, 0.129);
+}
+.side-btn{
+    background: transparent;
+    border: none;
+}
+.side-btn:focus{
+    outline: none;
+    background: transparent;
+}
+/* progress */
+
+.circular{
+    height: 200px;
+    width: 200px;
+    position: relative;
+  }
+  .circular .inner, .circular .outer, .circular .circle{
+    position: absolute;
+    z-index: 6;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
+  }
+  .circular .inner{
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background-color: #dde6f000;
+    border-radius: 100%;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  }
+  .circular .circle{
+    z-index: 1;
+    box-shadow: none;
+  }
+  .circular .numb{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+  .circular .bar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 200px, 200px, 100px);
+  }
+  .circle .bar .progress{
+    position: absolute;
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 200px, 0px);
+  }
+  .circle .bar .progress, .dot span{
+    background: rgba(47, 255, 134, 0.315);
+  }
+  .circle .left .progress{
+    z-index: 1;
+    animation: left 2s linear both;
+  }
+  @keyframes left {
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  .circle .right{
+    z-index: 3;
+    transform: rotate(180deg);
+  }
+  .circle .right .progress{
+    animation: right 2s linear both;
+    animation-delay: 2s;
+  }
+  @keyframes right {
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  .circle .dot{
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 10px;
+    margin-top: 0px;
+    background-color: rgba(139, 69, 19, 0);
+    animation: dot 4s linear both;
+    transform-origin: 0% 50%;
+  }
+  .circle .dot span {
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(244, 165, 96, 0);
+  }
+  @keyframes dot{
+    0% {
+      transform: rotate(-90deg);
+    }
+    50% {
+      transform: rotate(90deg);
+      z-index: 4;
+    }
+    100% {
+      transform: rotate(270deg);
+      z-index: 4;
+    }
+  }
