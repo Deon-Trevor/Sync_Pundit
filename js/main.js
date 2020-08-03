@@ -31,3 +31,4 @@ $(document).ready(function(){
     $("#cv-1").hide();
   });
   new WOW().init();
+  feather.replace();
