@@ -227,3 +227,48 @@ h3,p{
       z-index: 4;
     }
   }
+  .cv-mobile{
+    display: none;
+  }
+  /* .main-side-bar{
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+  } */
+  .content-area{
+    margin-left: 10%;
+  }
+  .anim-text h4{
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), #fff, rgb(14, 116, 19));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .cv-img{
+        display: none;
+    }
+    .cv-mobile{
+      display: block;
+      width: 100%;
+    }
+  }
