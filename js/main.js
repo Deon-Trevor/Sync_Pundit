@@ -30,5 +30,29 @@ $(document).ready(function(){
     $("#cv-3").hide();
     $("#cv-1").hide();
   });
+  $("#btn-5").click(function(){
+    $("#cv-1").show();
+    $("#cv-2").hide();
+    $("#cv-3").hide();
+    $("#cv-4").hide();
+  });
+  $("#btn-6").click(function(){
+    $("#cv-2").show();
+    $("#cv-1").hide();
+    $("#cv-3").hide();
+    $("#cv-4").hide();
+  });
+  $("#btn-7").click(function(){
+    $("#cv-3").show();
+    $("#cv-2").hide();
+    $("#cv-1").hide();
+    $("#cv-4").hide();
+  });
+  $("#btn-8").click(function(){
+    $("#cv-4").show();
+    $("#cv-2").hide();
+    $("#cv-3").hide();
+    $("#cv-1").hide();
+  });
   new WOW().init();
-  feather.replace();
+  feather.replace(); 

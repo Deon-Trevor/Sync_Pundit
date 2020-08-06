@@ -10,7 +10,12 @@
     color: white;
 }
 body{
-    background-color: #333;
+    /* background-color: #333; */
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: cover;
 }
 .wrapper{
     background-image: url("../images/bg.jpg");
@@ -22,7 +27,6 @@ body{
 #home-body{
     width: 100%;
     /* max-width: 1700px; */
-    background-color: #333;
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
@@ -63,6 +67,9 @@ nav{
 }
 .container{
     background: rgba(0, 0, 0, 0.671);
+}
+.brand-logo{
+  font-size: 32px;
 }
 h3,p{
     color: white;
@@ -114,9 +121,20 @@ h3,p{
     outline: none;
     background: transparent;
 }
+.main-side-bar-2{
+  height:100px;display: flex;flex-direction: row;justify-content: space-around;align-items: center;
+  display: none;
+}
+.button-col-2{
+  width: 100%;
+  min-height: 100px;
+  background:rgba(0, 0, 0, 0.129);
+}
 /* progress */
 
 .circular{
+  margin-left: auto;
+  margin-right: auto;
     height: 200px;
     width: 200px;
     position: relative;
@@ -230,15 +248,13 @@ h3,p{
   .cv-mobile{
     display: none;
   }
-  /* .main-side-bar{
-    position: fixed;
-    display: flex;
-    align-items: flex-start;
-  } */
+  .main-side-bar{
+    height:100vh;display: flex;flex-direction: column;justify-content: space-around;align-items: center;
+  }
   .content-area{
     margin-left: 10%;
   }
-  .anim-text h4{
+  .anim-text h4,h1{
     color: white;
     position: relative;
     font-family: sans-serif;
@@ -253,6 +269,21 @@ h3,p{
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
   }
+  .anim-text p{
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff, rgb(14, 116, 19));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.726);
+  }
   
   @keyframes animate {
     0% {
@@ -264,11 +295,29 @@ h3,p{
   }
 
   @media only screen and (max-width: 600px) {
+    #home-body{
+      width: 100%;
+      /* max-width: 1700px; */
+      overflow: scroll;
+      margin-left: auto;
+      margin-right: auto;
+      min-height: 100vh;
+  }
     .cv-img{
         display: none;
     }
     .cv-mobile{
       display: block;
       width: 100%;
+    }
+    .brand-logo{
+      font-size: 18px !important;
+    }
+    .main-side-bar{
+      display: none;
+    }
+    .main-side-bar-2{
+      height:100px;display: flex !important;flex-direction: row;justify-content: space-around;align-items: center;
+      display: block;
     }
   }
