@@ -31,7 +31,13 @@ body{
     margin-right: auto;
     height: 100vh;
 }
-
+.thm_margin{
+  position: absolute;
+  right: 40px;
+}
+nav ul{
+  margin-right:250px ;
+}
 p,td,a{
     font-size: 18px;
 }
@@ -319,5 +325,9 @@ h3,p{
     .main-side-bar-2{
       height:100px;display: flex !important;flex-direction: row;justify-content: space-around;align-items: center;
       display: block;
+    }
+    .thm_margin{
+      position: relative;
+      left: 0;
     }
   }
