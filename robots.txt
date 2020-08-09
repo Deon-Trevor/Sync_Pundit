@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 Allow: /sitemap.htm
 Sitemap: https://syncpundit.ml/sitemap.xml
+Disallow: /css/
+Disallow: /images/
+Disallow: /js/
