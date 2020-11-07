@@ -29,6 +29,9 @@ td{
   vertical-align: top;
 
 }
+a{
+  color:white !important;
+}
 .typing_one{
   width: 0ch;
   border: none;
@@ -771,10 +774,10 @@ input:focus{
 }
 @keyframes borders{
   0%{
-    border-right:1px solid white;
+    border-right:3px solid white;
   }
   100%{
-    border-right:1px solid white;
+    border-right:3px solid white;
   }
 }
 @keyframes showanim{

@@ -1,0 +1,16 @@
+@media only screen and (max-width: 504px) {
+    .mobile{
+        display: block;
+    }
+    .main{
+        display: none;
+    }
+}
+@media only screen and (min-width: 505px) {
+    .mobile{
+        display: none;
+    }
+    .main{
+        display: block;
+    }
+}
