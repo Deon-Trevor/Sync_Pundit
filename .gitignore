@@ -1,6 +1,10 @@
-.firebase/
 .firebaserc
-firebase.json
-public/
-headers.txt
-.vscode/
+blog/firebase.json
+blog/storage.rules
+blog/files.publii.json
+website/storage.rules
+website/remoteconfig.template.json
+website/package.json
+website/firebase.json
+public
+website/headers.txt

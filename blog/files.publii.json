@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "e33f4e8817478b8f5e3ef4d093243394"
+        "md5": "f440d3cf762ad95a4ee7f2fd04b8761d"
     },
     {
         "path": "amp",
@@ -22,12 +22,12 @@
     {
         "path": "/amp/authors/sync_pundit/index.html",
         "type": "file",
-        "md5": "b78abe2c206a4e67ad0f2bd277003089"
+        "md5": "92dfc1fe16a2a1b299cfea8934afd751"
     },
     {
         "path": "/amp/index.html",
         "type": "file",
-        "md5": "9defeb2ef2a579415624deaac537e890"
+        "md5": "f6f32531a822b7d7a33335fefec5a816"
     },
     {
         "path": "amp/spacex-bitcoin-giveaway",
@@ -37,7 +37,7 @@
     {
         "path": "/amp/spacex-bitcoin-giveaway/index.html",
         "type": "file",
-        "md5": "ab5a4e2a184b6212dfda78bae30db008"
+        "md5": "50f0ea41f0154f299c974e36d20d1c39"
     },
     {
         "path": "amp/sync",
@@ -52,7 +52,7 @@
     {
         "path": "/amp/sync/research/index.html",
         "type": "file",
-        "md5": "bbe811d26eae408a3ef9cf1b5bb1f727"
+        "md5": "4afe1b8a4b327c2ea6d8fd7c64cfbb49"
     },
     {
         "path": "assets",
@@ -157,22 +157,12 @@
     {
         "path": "/authors/sync_pundit/index.html",
         "type": "file",
-        "md5": "9332cb070f04d16914a3079c9e471f6a"
-    },
-    {
-        "path": "feed.json",
-        "type": "file",
-        "md5": "b67cc7cd8fbeb23a927c95d0e22063e9"
-    },
-    {
-        "path": "feed.xml",
-        "type": "file",
-        "md5": "5ccff2d607eae9c7bcbbd086af5118cf"
+        "md5": "b14e5cf04b47e70e551b020cf6ce254f"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "420db922077ff524c7bedb0a418c0f66"
+        "md5": "a4a39bd844bb32b91e2d34a3ddbf7128"
     },
     {
         "path": "media",
@@ -807,12 +797,12 @@
     {
         "path": "search.html",
         "type": "file",
-        "md5": "5018167f283bcc210ca6cc580776198c"
+        "md5": "1db22d53281f55bc16a8c80f4f1bfcac"
     },
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "55a1169684f2de455c3d30f7d1939e81"
+        "md5": "600dbec41d78fdfb3ffc05484aec037d"
     },
     {
         "path": "sitemap.xsl",
@@ -827,7 +817,7 @@
     {
         "path": "/spacex-bitcoin-giveaway/index.html",
         "type": "file",
-        "md5": "4594a12beb821aee2b5498109f72e0cf"
+        "md5": "b5eedce2290178c77528b530a68532c1"
     },
     {
         "path": "sync",
@@ -842,6 +832,6 @@
     {
         "path": "/sync/research/index.html",
         "type": "file",
-        "md5": "29ea499d1ef2900777451d5ece090012"
+        "md5": "d90b5e22ae4a34266860ab27bac879c4"
     }
 ]
