@@ -35,7 +35,7 @@ function function01M(){
       document.getElementById("msection").innerHTML +="<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform2\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode2\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function02M();\"></form></td></tr></table>";
       setTimeout(function(){ 
           window.open( 
-                "https://syncpundit.ml/blog/", "_blank");
+                "https://blog.syncpundit.ml/", "_blank");
       },5000);
       
       document.getElementById('mtimestamp10').innerHTML = mtimestamp1;
@@ -99,7 +99,7 @@ function function02M(){
     document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform3\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode3\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function03M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://syncpundit.ml/blog/", "_blank");
+              "https://blog.syncpundit.ml/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp2;
@@ -170,7 +170,7 @@ function function03M(){
       document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform4\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode4\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function04M();\"></form></td></tr></table>");
       setTimeout(function(){ 
           window.open( 
-                "https://syncpundit.ml/blog/", "_blank");
+                "https://blog.syncpundit.ml/", "_blank");
       },5000);
       
       document.getElementById('mtimestamp10').innerHTML = mtimestamp3;
@@ -241,7 +241,7 @@ function function04M(){
       document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform5\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode5\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function05M();\"></form></td></tr></table>");
       setTimeout(function(){ 
           window.open( 
-                "https://syncpundit.ml/blog/", "_blank");
+                "https://blog.syncpundit.ml/", "_blank");
       },5000);
       
       document.getElementById('mtimestamp10').innerHTML = mtimestamp4;
@@ -317,7 +317,7 @@ function function05M(){
     document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"timestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform6\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode6\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function06M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://syncpundit.ml/blog/", "_blank");
+              "https://blog.syncpundit.ml/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp5;
@@ -394,7 +394,7 @@ function function06M(){
     document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"timestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform7\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode7\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function07M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://syncpundit.ml/blog/", "_blank");
+              "https://blog.syncpundit.ml/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp6;
@@ -465,7 +465,7 @@ function function07M(){
     document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"timestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform8\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode8\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function08M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://syncpundit.ml/blog/", "_blank");
+              "https://blog.syncpundit.ml/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp7;
@@ -529,7 +529,7 @@ function function08M(){
     document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"timestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://syncpundit.ml/blog/", "_blank");
+              "https://blog.syncpundit.ml/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp8;
@@ -593,7 +593,7 @@ function function09M(){
     document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"timestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://syncpundit.ml/blog/", "_blank");
+              "https://blog.syncpundit.ml/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp9;
