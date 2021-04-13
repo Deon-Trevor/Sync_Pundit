@@ -167,7 +167,7 @@
     {
         "path": "/authors/sync_pundit/index.html",
         "type": "file",
-        "md5": "f7a2477145bbc0b130844387a4f1d167"
+        "md5": "df898a3cae57b33714a081ead3c28295"
     },
     {
         "path": "index.html",
@@ -740,6 +740,11 @@
         "md5": false
     },
     {
+        "path": "/media/website/1595669484831.jpg",
+        "type": "file",
+        "md5": "0362e31799160916c8d9f3c15de04a33"
+    },
+    {
         "path": "/media/website/favicon-2.png",
         "type": "file",
         "md5": "884eb9d557778775d296df9f843d88b9"
@@ -758,6 +763,36 @@
         "path": "media/website/responsive",
         "type": "directory",
         "md5": false
+    },
+    {
+        "path": "/media/website/responsive/1595669484831-2xl.jpg",
+        "type": "file",
+        "md5": "2b149fd99e8d772ba3bd186813075247"
+    },
+    {
+        "path": "/media/website/responsive/1595669484831-lg.jpg",
+        "type": "file",
+        "md5": "04ffc3b16e920d0d5371395a27c99eeb"
+    },
+    {
+        "path": "/media/website/responsive/1595669484831-md.jpg",
+        "type": "file",
+        "md5": "95b78c0fc17b5ae53ea2f2c672bf2a95"
+    },
+    {
+        "path": "/media/website/responsive/1595669484831-sm.jpg",
+        "type": "file",
+        "md5": "d43ff1bee877384edbd321e1f4253234"
+    },
+    {
+        "path": "/media/website/responsive/1595669484831-xl.jpg",
+        "type": "file",
+        "md5": "4bdc3f89574bf4fda59159bacf4ab338"
+    },
+    {
+        "path": "/media/website/responsive/1595669484831-xs.jpg",
+        "type": "file",
+        "md5": "b8080cecafa06a60c7229a8f843e8bb5"
     },
     {
         "path": "/media/website/responsive/favicon-2-2xl.png",
