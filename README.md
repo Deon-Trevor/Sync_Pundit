@@ -1,3 +1,10 @@
-# Deon Trevor Mpofu
+# [Sync_Pundit](https://github.com/Deon-Trevor/Sync_Pundit)
 
-This is my git repo  to host my resume, future projects and blog posts. Fell free to contribute ideas and whatnot
+<a href="https://github.com/Deon-Trevor/Sync_Pundit">
+
+![](https://github.com/Deon-Trevor/Github-Stats/blob/master/generated/overview.svg)
+![](https://github.com/Deon-Trevor/Github-Stats/blob/master/generated/languages.svg)
+
+</a>
+
+This is where i host my resume and blog posts. Fell free to contribute ideas and whatnot
