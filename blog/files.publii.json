@@ -82,7 +82,7 @@
     {
         "path": "/amp/vulnversity-walkthrough/index.html",
         "type": "file",
-        "md5": "187a3eba9ff9f9272a0ae841a0e787a8"
+        "md5": "62485267059de968604875d134cd09da"
     },
     {
         "path": "assets",
@@ -1762,7 +1762,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "668eb4cb0aff04157b021bb38d351245"
+        "md5": "4d93ea29701a5a916d8b871edab6c87a"
     },
     {
         "path": "sitemap.xsl",
@@ -1812,6 +1812,6 @@
     {
         "path": "/vulnversity-walkthrough/index.html",
         "type": "file",
-        "md5": "3f5b04f585069f8860e09565d2f2da98"
+        "md5": "f7fb70b5948122e81f02e02c723cbeb0"
     }
 ]
