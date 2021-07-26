@@ -9,3 +9,4 @@ website/firebase.json
 public
 website/headers.txt
 github/
+node_modules/
