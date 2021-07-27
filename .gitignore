@@ -6,7 +6,6 @@ website/storage.rules
 website/remoteconfig.template.json
 website/package.json
 website/firebase.json
-public
 website/headers.txt
 github/
 node_modules/
