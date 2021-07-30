@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://blog.syncpundit.ml/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://blog.syncpundit.ml/</loc>
+</url>
+<url>
+<loc>https://blog.syncpundit.ml/pancakeswap-and-cream-finance-dns-attack/</loc>
+<lastmod>2021-03-31T03:26:19+02:00</lastmod>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/2/pan2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/2//pan.png</image:loc>
+<image:title><![CDATA[cream tweet]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/2//pan1.png</image:loc>
+<image:title><![CDATA[pancakeswap tweet]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://blog.syncpundit.ml/spacex-bitcoin-giveaway/</loc>
+<lastmod>2020-08-13T14:47:47+02:00</lastmod>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-2-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>file:///home/notorious/Documents/Publii/sites/sync_pundit/input/media/posts/2//unnamed-1.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-1-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-1.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-3-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-4.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-5.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-6.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-7.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>file:///home/notorious/Documents/Publii/sites/sync_pundit/input/media/posts/2//unnamed-8.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-8.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-10.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/1/unnamed-9.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://blog.syncpundit.ml/vulnversity-walkthrough/</loc>
+<lastmod>2021-07-23T23:39:52+02:00</lastmod>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/vulversity-2.png</image:loc>
+<image:title><![CDATA[vulnversity home page]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/lets-go.png</image:loc>
+<image:title><![CDATA[Machine Information]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/nmap-out-2.png</image:loc>
+<image:title><![CDATA[Nmap Output]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/vulversity.png</image:loc>
+<image:title><![CDATA[Vulnversity]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/gobuster.png</image:loc>
+<image:title><![CDATA[gobuster output]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/upload.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/php-rev-shell.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/scope.png</image:loc>
+<image:title><![CDATA[scope]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/upload-rejected.png</image:loc>
+<image:title><![CDATA[upload rejected]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/http-history.png</image:loc>
+<image:title><![CDATA[http history]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/clear.png</image:loc>
+<image:title><![CDATA[clear positions]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/filename.png</image:loc>
+<image:title><![CDATA[highligh new position]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/payload-list.png</image:loc>
+<image:title><![CDATA[payload list]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/compromise.png</image:loc>
+<image:title><![CDATA[access gained]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/we-in.png</image:loc>
+<image:title><![CDATA[proof of compromise]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/initial-access.png</image:loc>
+<image:title><![CDATA[initial access]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/user-flag.png</image:loc>
+<image:title><![CDATA[user flag]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/suid.png</image:loc>
+<image:title><![CDATA[SUID]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/service.png</image:loc>
+<image:title><![CDATA[service]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://blog.syncpundit.ml/media/posts/3/root-flag.png</image:loc>
+<image:title><![CDATA[root flag]]></image:title>
+</image:image>
+</url>
+</urlset>

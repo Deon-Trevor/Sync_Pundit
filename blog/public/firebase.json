@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "site": "sync-pundit-blog",	
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
+
