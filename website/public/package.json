@@ -1,0 +1,25 @@
+{
+  "name": "sync_pundit",
+  "version": "4.0.3",
+  "description": "Project to host live resume and blog",
+  "main": "mobile.js",
+  "scripts": {
+    "test": "What it do hommie"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deon-Trevor/Sync_Pundit.git"
+  },
+  "keywords": [
+    "Sync_Pundit",
+    "Deon",
+    "Trevor",
+    "Mpofu"
+  ],
+  "author": "Deon Trevor Mpofu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Deon-Trevor/Sync_Pundit/issues"
+  },
+  "homepage": "https://github.com/Deon-Trevor/Sync_Pundit#readme"
+}
