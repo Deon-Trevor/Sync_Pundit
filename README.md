@@ -7,4 +7,4 @@
 
 </a>
 
-This is where i host my resume and blog posts. Fell free to contribute ideas and whatnot
+This is where i host my resume. Fell free to contribute ideas and whatnot
