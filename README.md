@@ -8,3 +8,5 @@
 </a>
 
 This is where i host my resume. Fell free to contribute ideas and whatnot
+
+Blog moved to [Sync_Pundit](https://github.com/Deon-Trevor/Sync_Pundit)
