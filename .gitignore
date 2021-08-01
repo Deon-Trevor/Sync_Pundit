@@ -10,4 +10,7 @@ public
 headers.txt
 github/website/.vscode/
 .vscode/
-github
+firebase.json
+remoteconfig.template.json
+storage.rules
+headers.txt
