@@ -1,0 +1,24 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Deon Trevor Mpofu | Sync_Pundit 👽😎🔱🔥| Cyber Security Analyst with demonstrated success in responding to and tracking down malicious activity, including phishing websites and domains, fake mobile apps, and instances of brand abuse, and taking them down.">
+<meta name="keywords" content="Deon Trevor Mpofu, Sync_Pundit, Sync Pundit, syncpundit, Cyber Security Analyst">
+<meta name="author" content="Deon Trevor Mpofu 👽😎🔱🔥">
+<title>Deon Trevor Mpofu | Sync_Pundit 👽😎🔱🔥| Cyber Security Analyst</title>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.17.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<script src="https://tryhackme.com/badge/7648"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+        new Crate({
+          server: '741328290996027454', // Sync_Pundit
+          channel: '741352271568306289' // #whoami
+        })
+      </script>

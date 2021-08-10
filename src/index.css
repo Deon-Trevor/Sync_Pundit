@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: black !important;
+  color: white;
+  scroll-behavior: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+input {
+    background-color: black !important;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+a {
+    color: white !important;
+}
+
+/* colors */
+.color-blue{
+    color: rgb(15, 101, 201);
+}
+
+.color-green{
+    color: rgb(9, 192, 9);
+}
+
+.color-red{
+    color: red;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+/**
+** Typing.
+*/
+.typing {
+    white-space: nowrap;
+    animation: animated-text 1s steps(29,end) 1s 1 normal both,
+                animated-cursor 600ms steps(29,end) infinite;
+}
+
+/**
+** Animations 
+*/
+@keyframes animated-text{
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 3ch;
+    }
+}
+
+/** 
+** Cursor animations.
+*/
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(234, 243, 234, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
