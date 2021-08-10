@@ -1,3 +1,4 @@
+import React from 'react';
 
 const ResponseListing = ({ response, userCommand }) =>{
     const timeStamp = () =>{
@@ -48,9 +49,9 @@ const CommandResponse = ({ userCommand }) => {
     ]
 
     const contactMeList = [
-        <a href='#'> Sync_Pundit@syncpundit.ml </a>,
-        <a href="#"> https://www.linkedin.com/in/deon-trevor-mpofu </a>,
-        <a href="#"> https://twitter.com/Sync_Pundit </a>,
+        <a href='Sync_Pundit@syncpundit.ml'> Website </a>,
+        <a href="https://www.linkedin.com/in/deon-trevor-mpofu"> LinkedIn </a>,
+        <a href="https://twitter.com/Sync_Pundit"> Twitter </a>,
     ]
 
     const lsAllList = [
@@ -79,7 +80,7 @@ const CommandResponse = ({ userCommand }) => {
     }
 
     return (
-        <> { switching(userCommand)} </>
+        <div> { switching(userCommand)} </div>
     )
 }
 

@@ -1,5 +1,5 @@
 // Imports
-import React, {useState} from "react"
+import React from "react"
 import CommandsList from "./CommandsList";
 
 const IntroMessage = (props) => {
@@ -25,11 +25,11 @@ const IntroMessage = (props) => {
             </div>
     
             <div id="second-header">
-                <div> <span className="color-green"> <span className="timeStamp" > {timeStamp()} </span>  &lt;sync_pundit&gt; </span> hello....! This is Deon Trevor Mpofu - call me Sync_Pundit </div>
-                <div> <span className="color-green"> <span className="timeStamp" > {timeStamp()} </span>  &lt;sync_pundit&gt; </span> i like hacking and security research and stuff.. </div>
-                <div> <span className="color-green"> <span className="timeStamp" > {timeStamp()} </span>  &lt;sync_pundit&gt; </span> navigate the system to learn more about me </div>
-                <div> <span className="color-green"> <span className="timeStamp" > {timeStamp()} </span>  &lt;sync_pundit&gt; </span> don't forget to check out the blog too! </div>
-                <div> <span className="color-green"> <span className="timeStamp" > {timeStamp()} </span>  &lt;sync_pundit&gt; </span> break a leg :) </div>
+                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> hello....! This is Deon Trevor Mpofu - call me Sync_Pundit </div>
+                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> i like hacking and security research and stuff.. </div>
+                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> navigate the system to learn more about me </div>
+                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> don't forget to check out the blog too! </div>
+                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> break a leg :) </div>
             </div>
 
             <CommandsList />
