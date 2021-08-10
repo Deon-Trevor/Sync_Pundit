@@ -1,11 +1,12 @@
 // Imports.
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Custom imports.
 import EnterCommandForm from './components/EnterCommandForm';
 import CommandsList from './components/CommandsList';
 import CommandResponse from './components/CommandResponse';
 import IntroMessage from './components/IntroMessage';
+import { useRef } from 'react';
 
 const AllCommands = ({ allCommands }) =>{
     return (
@@ -18,8 +19,23 @@ const AllCommands = ({ allCommands }) =>{
 const App = (props)=> {
     const [allCommands, setAllCommands] = useState([]);
 
+    // auto scrolling when text goes out of view.
+    // useRef and useEffect.
+    const siteBodyRef = useRef();
+
+    useEffect(()=>{
+        if (siteBodyRef.current){
+            siteBodyRef.current.scrollIntoView(
+                {
+                    behaviour: "smooth",
+                    block: "end"
+                }
+            )
+        }
+    })
+
     return (
-        <div className='container'>
+        <div className='container' ref={siteBodyRef}>
             <IntroMessage   />
             <AllCommands allCommands={allCommands}/>
             
