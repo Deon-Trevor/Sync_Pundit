@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React,{useEffect,useState} from react;
 
-const TypingEffect = ({text, speed}) => {
-
+const TypingEffect = (props) => {
     const [typing, setTyping] = useState('');
     const [index, setIndex] = useState(0);
   
