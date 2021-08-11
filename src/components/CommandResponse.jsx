@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ResponseListing = ({ response, userCommand }) =>{
+const ResponseListing = ({ response, enteredCommand }) =>{
     const timeStamp = () =>{
         let now = new Date();
         return now.getHours() + ":" + now.getMinutes();
@@ -8,8 +8,8 @@ const ResponseListing = ({ response, userCommand }) =>{
 
     return (
         <div>
-            <div className="d-flex mb-2 mt-2">
-                <span className="color-green"> root@sync_pundit:~# </span><span className='ms-2'> {userCommand} </span>
+            <div className="d-flex mb-2 mt-3">
+                <span className="color-green"> root@sync_pundit:~# </span><span className='ms-2'> { enteredCommand } </span>
             </div>
             <div className="d-flex mb-3">
                 <div>
@@ -23,16 +23,16 @@ const ResponseListing = ({ response, userCommand }) =>{
     )
 }
 
-const CommandResponse = ({ userCommand }) => {
+const CommandResponse = ({ enteredCommand }) => {
     const whoAmIs = [
         "\"I'm currently at PhishFort on the frontlines in the war against phishing attacks.",
-        " I enjoy tracking down malicious activity from phishing websites, apps, web apps and pentesting networks.",
+        " I enjoy tracking down malicious activity from phishing websites, apps, web apps and penetration testing networks.",
         "Off work i spend my time training on Try Hack Me and Hack The Box, researching and playing around with all sorts",
         "I also enjoy playtng video games",
         "- Mortal Kombat, Tekken, Soul Calibur - you get the point, Need for Speed, Forza e.t.c",
         "- Call of Duty, Battlefield - GOD of War, GTA",
-        ".....i just love video games :)",
-        "I also sing and record covers, beatbox, rap(I'm horrible btw, but i like it!), watch anime and stand up comedy"
+        ".....I just love video games :)",
+        "I also sing and record covers, beatbox, rap(I'm horrible btw, but i like it!), watch anime and stand up comedy\""
     ];
 
     const expertiseList = [
@@ -62,25 +62,31 @@ const CommandResponse = ({ userCommand }) => {
         "Coming soon",
     ]
 
-    const switching = (userCommand) =>{
-        switch (userCommand) {
+    const blog = [
+        "Coming soon",
+    ]
+
+    const switching = (enteredCommand) =>{
+        switch (enteredCommand) {
             case "whoami":
-                return <ResponseListing response={whoAmIs} userCommand={userCommand} />
+                return <ResponseListing response={whoAmIs} enteredCommand={enteredCommand} />
             case "contact":
-                return <ResponseListing response={contactMeList} userCommand={userCommand}/>
+                return <ResponseListing response={contactMeList} enteredCommand={enteredCommand}/>
             case "expertise":
-                return <ResponseListing response={expertiseList} userCommand={userCommand}/>
+                return <ResponseListing response={expertiseList} enteredCommand={enteredCommand}/>
             case "ls":
-                return <ResponseListing response={lsAllList} userCommand={userCommand}/>
+                return <ResponseListing response={lsAllList} enteredCommand={enteredCommand}/>
             case "misc":
-                return <ResponseListing response={miscList} userCommand={userCommand}/>
+                return <ResponseListing response={miscList} enteredCommand={enteredCommand}/>
+            case "blog":
+                return <ResponseListing response={blog} enteredCommand={enteredCommand}/>
             default:
-               return  <ResponseListing response={["Command unknown!",]} userCommand={userCommand}/>
+               return  <ResponseListing response={["Command unknown!",]} enteredCommand={enteredCommand}/>
         }      
     }
 
     return (
-        <div> { switching(userCommand)} </div>
+        <div> { switching(enteredCommand)} </div>
     )
 }
 
