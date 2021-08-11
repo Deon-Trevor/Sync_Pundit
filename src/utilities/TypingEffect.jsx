@@ -1,3 +1,5 @@
+import React,{useEffect,useState} from react;
+
 const TypingEffect = (props) => {
 
     const [typing, setTyping] = useState('');
