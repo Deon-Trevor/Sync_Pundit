@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CommandsList = (props) => {
+const CommandsList = () => {
 
     const commandsList = 
-        ["whoami", "ls", "expertise", "contact", "blog", "misc"];
+        ["whoami", "expertise", "contact", "blog", "misc", "ls", "clear"];
 
     return (
         <div className="d-flex ms-5 mt-4">

@@ -1,22 +1,21 @@
 import React,{useEffect,useState} from react;
 
 const TypingEffect = (props) => {
-
     const [typing, setTyping] = useState('');
     const [index, setIndex] = useState(0);
   
     useEffect(()=>{
-      if (index < props.text.length) {
+      if (index < text.length) {
         setTimeout(() => {
-          setTyping(typing + props.text[index]);
+          setTyping(typing + text[index]);
           setIndex(index + 1);
-          }, props.speed
+          }, speed
         );
       }
     },[index]) 
   
     return (
-      <span>{typing}</span>
+      <span>{ typing }</span>
     )
 }
 
