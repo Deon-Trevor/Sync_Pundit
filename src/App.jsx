@@ -16,7 +16,7 @@ const AllCommands = ({ allCommands }) =>{
     )
 }
 
-const App = (props)=> {
+const App = ()=> {
     const [allCommands, setAllCommands] = useState([]);
 
     // auto scrolling when text goes out of view.
@@ -40,11 +40,20 @@ const App = (props)=> {
             <AllCommands allCommands={allCommands}/>
             
             <EnterCommandForm callCommand={
+    
                 (newCommand)=>{
-                    if (newCommand.trim() === 'commands')
-                        setAllCommands([...allCommands, <CommandsList />]);
-                    else 
-                        setAllCommands([...allCommands, <CommandResponse userCommand={newCommand}/>])
+                    switch(newCommand.trim()){
+                        case 'commands':
+                            setAllCommands([...allCommands, <CommandsList />]);
+                            break;
+                        case 'cls':
+                        case 'clear':
+                            setAllCommands([]);
+                            break;
+                        default:
+                            setAllCommands([...allCommands, <CommandResponse enteredCommand={newCommand}/>]);
+                            break;
+                    }
                 }
             }/>
         </div>
