@@ -24,7 +24,7 @@ const IntroMessage = (props) => {
                 <div> <span className="color-blue"> [*] </span> Commands shell session 1 opened <span> (192.168.1.101:2345 =&gt; 192.168.1.175:1129) </span> </div>
             </div>
     
-            <div id="second-header">
+            <div id="second-header" className="mt-4">
                 <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> hello....! This is Deon Trevor Mpofu - call me Sync_Pundit </div>
                 <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> i like hacking and security research and stuff.. </div>
                 <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> navigate the system to learn more about me </div>
