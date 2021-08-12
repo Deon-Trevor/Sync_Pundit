@@ -63,8 +63,16 @@ const CommandResponse = ({ enteredCommand }) => {
     ]
 
     const blog = [
-        "Coming soon",
+        "==== Taking you to the blog ====>",
     ]
+
+    // opens the blog.
+    const openBlogOnNewWindow = () => {
+        setTimeout(function(){ 
+            window.open( 
+                  "https://blog.syncpundit.ml/", "_blank");
+        },5000);
+    }
 
     const switching = (enteredCommand) =>{
         switch (enteredCommand) {
@@ -79,7 +87,12 @@ const CommandResponse = ({ enteredCommand }) => {
             case "misc":
                 return <ResponseListing response={miscList} enteredCommand={enteredCommand}/>
             case "blog":
-                return <ResponseListing response={blog} enteredCommand={enteredCommand}/>
+                return( 
+                    <div>
+                        <ResponseListing response={blog} enteredCommand={enteredCommand}/>
+                        {openBlogOnNewWindow()}
+                    </div>
+                )
             default:
                return  <ResponseListing response={["Command unknown!",]} enteredCommand={enteredCommand}/>
         }      
