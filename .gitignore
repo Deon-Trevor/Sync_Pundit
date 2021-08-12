@@ -16,3 +16,4 @@ firebase.json
 remoteconfig.template.json
 storage.rules
 headers.txt
+.vscode/settings.json
