@@ -3,7 +3,7 @@ import React from 'react';
 const CommandsList = () => {
 
     const commandsList = 
-        ["whoami", "expertise", "contact", "blog", "misc", "ls", "clear"];
+        ["whoami", "expertise", "contact", "blog", "github", "misc", "ls", "clear"];
 
     return (
         <div className="d-flex ms-5 mt-4">
