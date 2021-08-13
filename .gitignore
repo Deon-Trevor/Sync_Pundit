@@ -8,7 +8,6 @@ storage.rules
 remoteconfig.template.json
 package.json
 firebase.json
-public
 headers.txt
 github/website/.vscode/
 .vscode/
@@ -17,3 +16,4 @@ remoteconfig.template.json
 storage.rules
 headers.txt
 .vscode/settings.json
+.env
