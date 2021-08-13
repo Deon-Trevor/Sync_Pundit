@@ -55,19 +55,37 @@ const CommandResponse = ({ enteredCommand }) => {
     ]
 
     const lsAllList = [
-        "Nothing to list",
+         <a href='text/contact.txt'> contact.txt </a>,
+         <a href='text/expertise.txt'> expertise.txt </a>,
     ]
   
     const miscList = [
-        "Coming soon",
+        <div className="mt-4" style={{marginLeft: '-7rem'}}>
+            <div className="color-green"> Commands: </div>
+            <div className="ms-5">
+              <div > revshell </div>
+            </div>
+        </div>
     ]
 
     // opens the blog.
-    const openBlogOnNewWindow = () => {
+    const openLinkOnNewWindow = (link) => {
+        if (link === "")
+            return;
+
         setTimeout(function(){ 
-            window.open( 
-                  "https://blog.syncpundit.ml/", "_blank");
+            window.open( link, "_blank");
         },3000);
+    }
+
+    /** 
+    *! This function was supposed to be avoided.
+    *!  It is resource expensive.
+    */
+    const onRefreshWindow = () =>{
+        setTimeout(()=>{
+            window.location.reload();
+        }, 1000);
     }
 
     const switching = (enteredCommand) =>{
@@ -82,6 +100,17 @@ const CommandResponse = ({ enteredCommand }) => {
                 return <ResponseListing response={lsAllList} enteredCommand={enteredCommand}/>
             case "misc":
                 return <ResponseListing response={miscList} enteredCommand={enteredCommand}/>
+            case "revshell":
+                return <div> { onRefreshWindow() } </div>
+            case "github":
+                return (
+                    <div>
+                        <ResponseListing
+                            response={["==== Taking you to Github ====>",]} 
+                            enteredCommand={enteredCommand}
+                        />
+                        { openLinkOnNewWindow("https://github.syncpundit.ml/")}
+                    </div>)
             case "blog":
                 return( 
                     <div>
@@ -89,7 +118,7 @@ const CommandResponse = ({ enteredCommand }) => {
                             response={["==== Taking you to the blog ====>",]} 
                             enteredCommand={enteredCommand}
                         />
-                        {openBlogOnNewWindow()}
+                        { openLinkOnNewWindow("https://blog.syncpundit.ml/")}
                     </div>
                 )
             default:
