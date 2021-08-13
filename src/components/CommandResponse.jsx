@@ -62,16 +62,12 @@ const CommandResponse = ({ enteredCommand }) => {
         "Coming soon",
     ]
 
-    const blog = [
-        "==== Taking you to the blog ====>",
-    ]
-
     // opens the blog.
     const openBlogOnNewWindow = () => {
         setTimeout(function(){ 
             window.open( 
                   "https://blog.syncpundit.ml/", "_blank");
-        },5000);
+        },3000);
     }
 
     const switching = (enteredCommand) =>{
@@ -89,7 +85,10 @@ const CommandResponse = ({ enteredCommand }) => {
             case "blog":
                 return( 
                     <div>
-                        <ResponseListing response={blog} enteredCommand={enteredCommand}/>
+                        <ResponseListing 
+                            response={["==== Taking you to the blog ====>",]} 
+                            enteredCommand={enteredCommand}
+                        />
                         {openBlogOnNewWindow()}
                     </div>
                 )
