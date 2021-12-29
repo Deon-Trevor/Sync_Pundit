@@ -1,11 +1,9 @@
-Social Engineering
 Anti-Phishing
-Incident Response
+Cyber Threat Intelligence
+OSINT
 Threat Hunting
-Penetration Testing
+Social Engineering
 Malware Analysis
 Security Testing and Assessment
-Vulnerability Assessment
-Scripting and Development
-Google Cloud Platform"
+Google Cloud Platform
 
