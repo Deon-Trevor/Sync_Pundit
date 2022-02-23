@@ -1,5 +1,6 @@
 import React from 'react';
 
+// displays the results of the commands issued.
 const ResponseListing = ({ response, enteredCommand }) =>{
     const timeStamp = () =>{
         let now = new Date();
@@ -68,7 +69,6 @@ const CommandResponse = ({ enteredCommand }) => {
         </div>
     ]
 
-    // opens the blog.
     const openLinkOnNewWindow = (link) => {
         if (link === "")
             return;
@@ -88,6 +88,7 @@ const CommandResponse = ({ enteredCommand }) => {
         }, 1000);
     }
 
+    // checks which command was issued, then display the results of the command.
     const switching = (enteredCommand) =>{
         switch (enteredCommand) {
             case "whoami":
