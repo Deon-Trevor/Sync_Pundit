@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import typingEffect from "typing-effect";
+import { dateApi } from 'utilities';
 
 // displays the results of the commands issued.
-const ResponseListing = ({ response, enteredCommand }) =>{
-    const timeStamp = () =>{
-        let now = new Date();
-        return now.getHours() + ":" + now.getMinutes();
-    }
+const ResponseListing = ({ response, enteredCommand }) => {
+    useEffect(() => {
+        typingEffect(
+            Array.from(document.querySelectorAll("[data-typing-effect]"))
+        );
+    })
 
     return (
-        <div>
+        <div >
             <div className="d-flex mb-2 mt-3">
-                <span className="color-green"> root@sync_pundit:~# </span><span className='ms-2'> { enteredCommand } </span>
+                <span className="color-green"> root@sync_pundit:~# </span><span className='ms-2'> {enteredCommand} </span>
             </div>
-            <div className="d-flex mb-3">
+            <div className="d-flex mb-3" data-typing-effect>
                 <div>
-                    <span className="color-green"> <span className="timeStamp" > { timeStamp() } </span>  &lt;sync_pundit&gt; </span>
+                    <span className="color-green"> <span className="timeStamp" > {dateApi.timeStamp()} </span>  &lt;sync_pundit&gt; </span>
                 </div>
                 <div className='ms-2'>
                     {response.map(item => <div key={item}> {item} </div>)}
@@ -56,15 +59,15 @@ const CommandResponse = ({ enteredCommand }) => {
     ]
 
     const lsAllList = [
-         <a href='text/contact.txt'> contact.txt </a>,
-         <a href='text/expertise.txt'> expertise.txt </a>,
+        <a href='text/contact.txt'> contact.txt </a>,
+        <a href='text/expertise.txt'> expertise.txt </a>,
     ]
-  
+
     const miscList = [
-        <div className="mt-4" style={{marginLeft: '-7rem'}}>
+        <div className="mt-4" style={{ marginLeft: '-7rem' }}>
             <div className="color-green"> Commands: </div>
             <div className="ms-5">
-              <div > revshell </div>
+                <div > revshell </div>
             </div>
         </div>
     ]
@@ -73,62 +76,62 @@ const CommandResponse = ({ enteredCommand }) => {
         if (link === "")
             return;
 
-        setTimeout(function(){ 
-            window.open( link, "_blank");
-        },3000);
+        setTimeout(function () {
+            window.open(link, "_blank");
+        }, 3000);
     }
 
     /** 
     *! This function was supposed to be avoided.
     *!  It is resource expensive.
     */
-    const onRefreshWindow = () =>{
-        setTimeout(()=>{
+    const onRefreshWindow = () => {
+        setTimeout(() => {
             window.location.reload();
         }, 1000);
     }
 
     // checks which command was issued, then display the results of the command.
-    const switching = (enteredCommand) =>{
+    const switching = (enteredCommand) => {
         switch (enteredCommand) {
             case "whoami":
                 return <ResponseListing response={whoAmIs} enteredCommand={enteredCommand} />
             case "contact":
-                return <ResponseListing response={contactMeList} enteredCommand={enteredCommand}/>
+                return <ResponseListing response={contactMeList} enteredCommand={enteredCommand} />
             case "expertise":
-                return <ResponseListing response={expertiseList} enteredCommand={enteredCommand}/>
+                return <ResponseListing response={expertiseList} enteredCommand={enteredCommand} />
             case "ls":
-                return <ResponseListing response={lsAllList} enteredCommand={enteredCommand}/>
+                return <ResponseListing response={lsAllList} enteredCommand={enteredCommand} />
             case "misc":
-                return <ResponseListing response={miscList} enteredCommand={enteredCommand}/>
+                return <ResponseListing response={miscList} enteredCommand={enteredCommand} />
             case "revshell":
-                return <div> { onRefreshWindow() } </div>
+                return <div> {onRefreshWindow()} </div>
             case "github":
                 return (
                     <div>
                         <ResponseListing
-                            response={["==== Taking you to Github ====>",]} 
+                            response={["==== Taking you to Github ====>",]}
                             enteredCommand={enteredCommand}
                         />
-                        { openLinkOnNewWindow("https://github.syncpundit.ml/")}
+                        {openLinkOnNewWindow("https://github.syncpundit.ml/")}
                     </div>)
             case "blog":
-                return( 
+                return (
                     <div>
-                        <ResponseListing 
-                            response={["==== Taking you to the blog ====>",]} 
+                        <ResponseListing
+                            response={["==== Taking you to the blog ====>",]}
                             enteredCommand={enteredCommand}
                         />
-                        { openLinkOnNewWindow("https://blog.syncpundit.ml/")}
+                        {openLinkOnNewWindow("https://blog.syncpundit.ml/")}
                     </div>
                 )
             default:
-               return  <ResponseListing response={["Command unknown!",]} enteredCommand={enteredCommand}/>
-        }      
+                return <ResponseListing response={["Command unknown!",]} enteredCommand={enteredCommand} />
+        }
     }
 
     return (
-        <div> { switching(enteredCommand)} </div>
+        <div> {switching(enteredCommand)} </div>
     )
 }
 

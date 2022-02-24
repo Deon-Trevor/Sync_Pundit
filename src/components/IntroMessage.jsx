@@ -1,13 +1,11 @@
 // Imports
 import React, { useEffect, useState } from "react";
-import CommandsList from "./commands";
 import { dateApi } from "utilities"
 import typingEffect from "typing-effect";
 
 export default function IntroMessage(props) {
     const [showCommands, setShowCommands] = useState(false)
     useEffect(() => {
-
         typingEffect(
             Array.from(document.querySelectorAll("[data-typing-effect]"))
         );
@@ -80,7 +78,27 @@ export default function IntroMessage(props) {
                 </div>
             </div>
 
-            {showCommands && <CommandsList />}
+            <div className="d-flex ms-5 mt-4" data-typing-effect>
+                <div className="color-green">
+                    Commands:
+                </div>
+                <div className="ms-5">
+                    {[
+                        "whoami",
+                        "expertise",
+                        "contact",
+                        "blog",
+                        "github",
+                        "misc",
+                        "ls",
+                        "clear"
+                    ].map(command =>
+                        <div key={command}>
+                            {command}
+                        </div>
+                    )}
+                </div>
+            </div>
         </div>
     );
 }
