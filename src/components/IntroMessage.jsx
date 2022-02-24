@@ -1,12 +1,17 @@
 // Imports
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CommandsList from "./commands";
+import { dateApi } from "utilities"
+import typingEffect from "typing-effect";
 
 export default function IntroMessage(props) {
-    const timeStamp = () => {
-        let now = new Date();
-        return now.getHours() + ":" + now.getMinutes();
-    };
+    const [showCommands, setShowCommands] = useState(false)
+    useEffect(() => {
+
+        typingEffect(
+            Array.from(document.querySelectorAll("[data-typing-effect]"))
+        );
+    })
 
     return (
         <div>
@@ -15,64 +20,67 @@ export default function IntroMessage(props) {
                     <span> msf5 exploit </span>
                     <span className="color-red"> ( multi/handler)</span> &gt;
                 </span>
-                <span className="typing-1"> run </span>
+                <span data-typing-effect> run </span>
             </div>
 
-            <div id="first-header">
+            <div data-typing-effect>
                 <div>
                     <span className="color-blue"> [*] </span>
-                    <span> Started reverse TCP handler </span>
-                    <span> on 192.168.1.101:2345 </span>
+                    <span>
+                        <span > Started reverse TCP handler </span>
+                        <span> on 192.168.1.101:2345 </span>
+                    </span>
                 </div>
                 <div>
-                    <span className="color-blue"> [*] </span> 
+                    <span className="color-blue"> [*] </span>
                     Sending stage (36 bytes)
                 </div>
                 <div>
-                    <span className="color-blue"> [*] </span> Commands shell session 1
-                    opened <span> (192.168.1.101:2345 =&gt; 192.168.1.175:1129) </span>
+                    <span className="color-blue"> [*] </span>
+                    Commands shell session 1 opened
+                    <span> (192.168.1.101:2345 =&gt; 192.168.1.175:1129) </span>
                 </div>
             </div>
 
-            <div id="second-header" className="mt-4">
-                <div>
+            <div className="mt-4">
+                <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp"> {timeStamp()} </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
-                    hello....! This is Deon Trevor Mpofu - call me Sync_Pundit
+                    {" "}hello....! This is Deon Trevor Mpofu - call me Sync_Pundit
                 </div>
-                <div>
+                <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp"> {timeStamp()} </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
-                    i like hacking and security research and stuff..
+                    {" "}i like hacking and security research and stuff..
                 </div>
-                <div>
+                <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp"> {timeStamp()} </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
-                    navigate the system to learn more about me
+                    {" "}navigate the system to learn more about me
                 </div>
-                <div>
+                <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp"> {timeStamp()} </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
-                    don't forget to check out the blog too!
+                    {" "}don't forget to check out the blog too!
                 </div>
-                <div>
+                <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp"> {timeStamp()} </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
-                    break a leg :)
+                    {" "}break a leg :)
                 </div>
             </div>
 
-            < CommandsList />
+            {showCommands && <CommandsList />}
         </div>
     );
 }
