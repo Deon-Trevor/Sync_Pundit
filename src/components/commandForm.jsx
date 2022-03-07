@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-export default function EnterCommandForm({ callCommand }) {
+export default function EnterCommandForm(props) {
   const [command, setCommand] = useState("");
 
   return (
@@ -9,10 +9,11 @@ export default function EnterCommandForm({ callCommand }) {
       className="form-inline d-flex align-items-center col-sm-12 col-md-6"
       onSubmit={(event) => {
         event.preventDefault();
-        callCommand(command);
+        props.callCommand(command);
 
         // clear the input box.
         setCommand("");
+        props.setIsTypingDone(!props.isTypingDone)
       }}
     >
       <label htmlFor="commandId" className="color-green">

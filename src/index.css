@@ -48,5 +48,5 @@ a {
 }
 
 [data-typing-effect] {
-  visibility: hidden;
+  display: none;
 }
