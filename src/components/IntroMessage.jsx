@@ -4,7 +4,7 @@ import { dateApi } from "utilities"
 import typingEffect from "typing-effect";
 
 export default function IntroMessage(props) {
-    // const [showCommands, setShowCommands] = useState(false)
+    const [showCommands, setShowCommands] = useState(false)
     useEffect(() => {
         typingEffect(
             Array.from(document.querySelectorAll("[data-typing-effect]"))
@@ -16,7 +16,7 @@ export default function IntroMessage(props) {
             <div>
                 <span>
                     <span> msf5 exploit </span>
-                    <span className="color-red"> ( multi/handler) </span> &gt;
+                    <span className="color-red"> ( multi/handler)</span> &gt;
                 </span>
                 <span data-typing-effect> run </span>
             </div>
@@ -43,59 +43,42 @@ export default function IntroMessage(props) {
             <div className="mt-4">
                 <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp">
-                            {dateApi.timeStamp()}
-                        </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
                     {" "}hello....! This is Deon Trevor Mpofu - call me Sync_Pundit
                 </div>
-
                 <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp">
-                            {dateApi.timeStamp()}
-                        </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
                     {" "}i like hacking and security research and stuff..
                 </div>
-
                 <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp">
-                            {dateApi.timeStamp()}
-                        </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
                     {" "}navigate the system to learn more about me
                 </div>
-
                 <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp">
-                            {dateApi.timeStamp()}
-                        </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
                     {" "}don't forget to check out the blog too!
                 </div>
-
                 <div data-typing-effect>
                     <span className="color-green">
-                        <span className="timeStamp">
-                            {dateApi.timeStamp()}
-                        </span>
+                        <span className="timeStamp"> {dateApi.timeStamp()} </span>
                         &lt;sync_pundit&gt;
                     </span>
                     {" "}break a leg :)
                 </div>
             </div>
 
-            <div
-                className="d-flex ms-5 mt-4"
-                data-typing-effect
-            >
+            <div className="d-flex ms-5 mt-4" data-typing-effect>
                 <div className="color-green">
                     Commands:
                 </div>
