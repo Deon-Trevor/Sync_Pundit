@@ -1,15 +1,28 @@
 // Imports.
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-// Custom components imports.
-import App from './App'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //Css imports.
 import './index.css';
 import "bootstrap/dist/css/bootstrap.css"
+import Page404 from 'components/404';
+import App from 'App';
 
 ReactDOM.render(
-    <App />,
+    <Router>
+        <Routes>
+            <Route
+                exact path="/"
+                element={<App />}
+            />
+
+            <Route
+                path="*"
+                element={<Page404 />}
+            />
+        </Routes>
+    </Router>
+    ,
     document.getElementById('root')
 );
