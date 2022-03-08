@@ -1,40 +1,76 @@
 // Imports
-import React from "react"
-import CommandsList from "./CommandsList";
+import React, { useEffect, useState } from "react";
+import { dateApi } from "utilities"
+import typingEffect from "typing-effect";
 
-const IntroMessage = (props) => {
-    const timeStamp = () => {
-        let now = new Date();
-        return now.getHours() + ":" + now.getMinutes();
-    }
+export default function IntroMessage(props) {
+    // const [showCommands, setShowCommands] = useState(false)
+    useEffect(() => {
+        typingEffect(
+            Array.from(document.querySelectorAll("[data-typing-effect]"))
+        ).then(() => props.setIsTypingDone(!props.isTypingDone));
+    }, [])
 
     return (
         <div>
-            <div> 
-                <span>
-                    <span> msf5 exploit </span>
-                    <span className="color-red"> (multi/handler) </span>  &gt;
-                </span>
-                <span className="typing-1"> run </span>
-            </div>
-    
-            <div id="first-header"> 
-                <div> <span className="color-blue"> [*] </span> <span> Started reverse TCP handler </span> <span> on 192.168.1.101:2345 </span> </div>
-                <div> <span className="color-blue"> [*] </span> Sending stage (36 bytes) </div>
-                <div> <span className="color-blue"> [*] </span> Commands shell session 1 opened <span> (192.168.1.101:2345 =&gt; 192.168.1.175:1129) </span> </div>
-            </div>
-    
-            <div id="second-header" className="mt-4">
-                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> hello....! This is Deon Trevor Mpofu - call me Sync_Pundit </div>
-                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> i like hacking and security research and stuff.. </div>
-                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> navigate the system to learn more about me </div>
-                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> don't forget to check out the blog too! </div>
-                <div> <span className="color-green"> <span className="timeStamp"> {timeStamp()} </span>  &lt;sync_pundit&gt; </span> break a leg :) </div>
+            <span>
+                msf5 exploit
+                <span className="text-danger"> (multi/handler) </span>
+                <span> &gt; </span>
+                <span className="ms-2" data-typing-effect> run </span>
+            </span>
+            {[
+                "Started reverse TCP handler on 192.168.1.101:2345",
+                "Sending stage (36 bytes)",
+                "Commands shell session 1 opened (192.168.1.101:2345 => 192.168.1.175:1129)"
+            ].map((statement, index) =>
+                <div key={index} data-typing-effect>
+                    <span className="text-primary"> [*] </span> {statement}
+                </div>
+            )}
+
+            <div className="mt-4">
+                {[
+                    "hello....! This is Deon Trevor Mpofu - call me Sync_Pundit",
+                    "i like hacking and security research and stuff.. ",
+                    "navigate the system to learn more about me",
+                    "don't forget to check out the blog too!",
+                    "break a leg :)"
+                ].map((statement, index) =>
+                    <div key={index}>
+                        <div data-typing-effect>
+                            <span className="color-green">
+                                {dateApi.timeStamp()} &lt;sync_pundit&gt;
+                            </span>
+                            <span>  {statement} </span>
+                        </div>
+                    </div>
+                )}
             </div>
 
-            <CommandsList />
+            <div
+                className="d-flex ms-5 mt-4"
+                data-typing-effect
+            >
+                <div className="color-green">
+                    Commands:
+                </div>
+                <div className="ms-5">
+                    {[
+                        "whoami",
+                        "expertise",
+                        "contact",
+                        "blog",
+                        "github",
+                        "misc",
+                        "ls",
+                    ].map(command =>
+                        <div key={command}>
+                            {command}
+                        </div>
+                    )}
+                </div>
+            </div>
         </div>
-    )
+    );
 }
-
-export default IntroMessage;
