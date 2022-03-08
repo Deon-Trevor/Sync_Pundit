@@ -7,11 +7,11 @@ import CommandsList from "./components/commands";
 import CommandResponse from "./components/commandResponse";
 import { useRef } from "react";
 
-const EnteredCommands = ({ allCommands }) => {
+const AllCommands = ({ allCommands }) => {
   return (
     <div>
       {allCommands.map((command, index) => (
-        <div key={index}> {command} </div>
+        <div> {command} </div>
       ))}
     </div>
   );
@@ -19,7 +19,6 @@ const EnteredCommands = ({ allCommands }) => {
 
 const App = () => {
   const [allCommands, setAllCommands] = useState([]);
-  const [isTypingDone, setIsTypingDone] = useState(false);
 
   // auto scrolling when text goes out of view.
   // useRef and useEffect.
@@ -32,54 +31,32 @@ const App = () => {
         block: "end",
       });
     }
-
-    console.log(`ISTYPING: ${isTypingDone}`)
-  }, [isTypingDone]);
+  });
 
   return (
     <div className="container" ref={siteBodyRef}>
-      <IntroMessage
-        isTypingDone={isTypingDone}
-        setIsTypingDone={setIsTypingDone}
-      />
+      <IntroMessage />
+      <AllCommands allCommands={allCommands} />
 
-      <EnteredCommands
-        allCommands={allCommands}
-        isTypingDone={isTypingDone}
-        setIsTypingDone={setIsTypingDone}
+      <EnterCommandForm
+        callCommand={(newCommand) => {
+          switch (newCommand.trim()) {
+            case "commands":
+              setAllCommands([...allCommands, <CommandsList />]);
+              break;
+            case "cls":
+            case "clear":
+              setAllCommands([]);
+              break;
+            default:
+              setAllCommands([
+                ...allCommands,
+                <CommandResponse enteredCommand={newCommand} />,
+              ]);
+              break;
+          }
+        }}
       />
-
-      {isTypingDone &&
-        <EnterCommandForm
-          isTypingDone={isTypingDone}
-          setIsTypingDone={setIsTypingDone}
-          callCommand={(command) => {
-            switch (command.trim()) {
-              case "commands":
-                setAllCommands([...allCommands, <CommandsList />]);
-                setIsTypingDone(!isTypingDone);
-                break;
-              case "cls":
-              case "clear":
-                console.log("this is the beginning!");
-                setIsTypingDone(true);
-                setAllCommands([]);
-                console.log("this is the end!");
-                break;
-              default:
-                setAllCommands([
-                  ...allCommands,
-                  <CommandResponse
-                    enteredCommand={command}
-                    isTypingDone={isTypingDone}
-                    setIsTypingDone={setIsTypingDone}
-                  />,
-                ]);
-                break;
-            }
-          }}
-        />
-      }
     </div>
   );
 };

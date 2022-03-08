@@ -7,6 +7,16 @@ const CommandsList = () => {
             Array.from(document.querySelectorAll("[data-typing-effect]"))
         );
     })
+    const commandsList = [
+        "whoami",
+        "expertise",
+        "contact",
+        "blog",
+        "github",
+        "misc",
+        "ls",
+        "clear"
+    ];
 
     return (
         <div className="d-flex ms-5 mt-4" data-typing-effect>
@@ -14,15 +24,7 @@ const CommandsList = () => {
                 Commands:
             </div>
             <div className="ms-5">
-                {[
-                    "whoami",
-                    "expertise",
-                    "contact",
-                    "blog",
-                    "github",
-                    "misc",
-                    "ls",
-                ].map(command =>
+                {commandsList.map(command =>
                     <div key={command}>
                         {command}
                     </div>
