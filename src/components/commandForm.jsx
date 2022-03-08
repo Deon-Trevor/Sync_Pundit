@@ -16,7 +16,10 @@ export default function EnterCommandForm(props) {
         props.setIsTypingDone(!props.isTypingDone)
       }}
     >
-      <label htmlFor="commandId" className="color-green">
+      <label
+        htmlFor="commandId"
+        className="color-green"
+      >
         root@sync_pundit:~#
       </label>
 
@@ -33,7 +36,10 @@ export default function EnterCommandForm(props) {
         }}
       />
 
-      <button type="submit" className="btn btn-primary mb-2 d-none">
+      <button
+        type="submit"
+        className="btn btn-primary mb-2 d-none"
+      >
         Submit
       </button>
     </form>

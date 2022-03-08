@@ -2,7 +2,9 @@ export default function Page404() {
     return (
         <div className="container">
             <div className="d-flex flex-column align-items-center">
-                <h1 className="fw-bolder text-center">Error 404 - Page Not Found!</h1>
+                <h1 className="fw-bolder text-center">
+                    Error 404 - Page Not Found!
+                </h1>
                 <div className="drawing">
                     <div className="circle"></div>
                     <div className="line"> </div>
