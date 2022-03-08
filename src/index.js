@@ -1,13 +1,15 @@
 // Imports.
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-//Css imports.
-import './index.css';
-import "bootstrap/dist/css/bootstrap.css"
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route
+} from "react-router-dom";
 import Page404 from 'components/404';
 import App from 'App';
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.css"
 
 ReactDOM.render(
     <Router>
