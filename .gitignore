@@ -6,7 +6,6 @@ blog/storage.rules
 blog/files.publii.json
 storage.rules
 remoteconfig.template.json
-package.json
 firebase.json
 public
 headers.txt

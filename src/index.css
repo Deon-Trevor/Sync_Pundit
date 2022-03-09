@@ -50,3 +50,59 @@ a {
 [data-typing-effect] {
   display: none;
 }
+
+.drawing {
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.drawing .circle {
+  top: 8rem;
+  border: 8px solid rgb(228, 225, 225);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.drawing .line {
+  left: 3rem;
+  top: 6rem;
+  width: 10rem;
+  height: 8px;
+  position: absolute;
+  background-color: rgb(228, 225, 225);
+  transform: rotate(-30deg);
+}
+
+.drawing .ball {
+  left: 1rem;
+  top: 7.2rem;
+  background: radial-gradient(
+    circle at bottom,
+    #81e8f6,
+    #76deef 10%,
+    #055194 80%,
+    #062745 100%
+  );
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+
+  animation: hit-tangent 8s;
+  animation-timing-function: cubic-bezier(0.17, 0.64, 0.53, 0.92);
+  animation-iteration-count: infinite;
+}
+
+@keyframes hit-tangent {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(10.4rem, -6rem);
+  }
+}

@@ -1,10 +1,9 @@
 // Imports
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { dateApi } from "utilities"
 import typingEffect from "typing-effect";
 
 export default function IntroMessage(props) {
-    // const [showCommands, setShowCommands] = useState(false)
     useEffect(() => {
         typingEffect(
             Array.from(document.querySelectorAll("[data-typing-effect]"))
@@ -12,7 +11,7 @@ export default function IntroMessage(props) {
     }, [])
 
     return (
-        <div>
+        <div className="mt-4">
             <span>
                 msf5 exploit
                 <span className="text-danger"> (multi/handler) </span>

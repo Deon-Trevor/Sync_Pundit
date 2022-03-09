@@ -20,11 +20,19 @@ const Response = (props) => {
     return (
         <div >
             <div className="d-flex mb-2 mt-3">
-                <span className="color-green"> root@sync_pundit:~# </span><span className='ms-2'> {props.enteredCommand} </span>
+                <span className="color-green">
+                    root@sync_pundit:~#
+                </span>
+                <span className='ms-2'>
+                    {props.enteredCommand}
+                </span>
             </div>
             <div className="d-flex mb-3">
                 <div>
-                    <span className="color-green"> <span className="timeStamp" > {dateApi.timeStamp()} </span>  &lt;sync_pundit&gt; </span>
+                    <span className="color-green">
+                        <span className="timeStamp" >
+                            {dateApi.timeStamp()}
+                        </span>  &lt;sync_pundit&gt; </span>
                 </div>
                 <div className='ms-2' data-typing-effect>
                     {props.response.map((item, index) =>
@@ -83,9 +91,15 @@ export default function CommandResponse(props) {
                 return (
                     <Response
                         response={[
-                            <a href='Sync_Pundit@syncpundit.ml'> Website </a>,
-                            <a href="https://www.linkedin.com/in/deon-trevor-mpofu"> LinkedIn </a>,
-                            <a href="https://twitter.com/Sync_Pundit"> Twitter </a>,
+                            <a href='Sync_Pundit@syncpundit.ml'>
+                                Website
+                            </a>,
+                            <a href="https://www.linkedin.com/in/deon-trevor-mpofu">
+                                LinkedIn
+                            </a>,
+                            <a href="https://twitter.com/Sync_Pundit">
+                                Twitter
+                            </a>,
                         ]}
                         enteredCommand={props.enteredCommand}
                         isTypingDone={props.isTypingDone}
