@@ -91,7 +91,7 @@ export default function CommandResponse(props) {
                 return (
                     <Response
                         response={[
-                            <a href='Sync_Pundit@syncpundit.ml'>
+                            <a href='Sync_Pundit@syncpundit.com'>
                                 Website
                             </a>,
                             <a href="https://www.linkedin.com/in/deon-trevor-mpofu">
