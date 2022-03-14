@@ -1,4 +1,5 @@
 node_modules/
+build/
 
 .firebaserc
 blog/firebase.json
@@ -16,3 +17,4 @@ remoteconfig.template.json
 storage.rules
 headers.txt
 .vscode/settings.json
+* .zip
