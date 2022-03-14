@@ -174,7 +174,19 @@ export default function CommandResponse(props) {
                     />
                 )
             case "revshell":
-                return <div> {onRefreshWindow()} </div>
+                return (
+                    <>
+                        <Response
+                            response={["Wait a second as we refresh...",]}
+                            enteredCommand={props.enteredCommand}
+                            isTypingDone={props.isTypingDone}
+                            setIsTypingDone={props.setIsTypingDone}
+                        />
+                        <div>
+                            {onRefreshWindow()}
+                        </div>
+                    </>
+                )
             case "github":
                 return (
                     <div>
