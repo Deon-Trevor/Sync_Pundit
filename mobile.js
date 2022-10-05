@@ -31,7 +31,7 @@ function function01M(){
     $( "#mcode2" ).addClass('mactivecode');
 
    }else if(input1.toLowerCase() == 'contact'){
-    document.getElementById("msection").innerHTML += "<table id=\"table1\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"m-catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.ml\">Email</a></p><p class=\"m-catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"m-catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform2\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode2\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function02M();\"></form></td></tr></table>";
+    document.getElementById("msection").innerHTML += "<table id=\"table1\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"m-catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.io\">Email</a></p><p class=\"m-catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"m-catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform2\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode2\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function02M();\"></form></td></tr></table>";
     document.getElementById('mtimestamp9').innerHTML =mtimestamp1;
     // document.getElementById('timestamp91').innerHTML = timestamp1;
     $( "#mcode2" ).focus();
@@ -41,7 +41,7 @@ function function01M(){
     document.getElementById("msection").innerHTML += "<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform2\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode2\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function02M();\"></form></td></tr></table>";
     setTimeout(function(){ 
         window.open( 
-              "https://blog.syncpundit.ml/", "_blank");
+              "https://blog.syncpundit.io/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp1;
@@ -53,7 +53,7 @@ function function01M(){
     document.getElementById("msection").innerHTML += "<table id= \"table1 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\..... taking you to my github api ......\</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform2\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode2\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function02M();\"></form></td></tr></table>";
     setTimeout(function(){ 
         window.open( 
-              "https://github.syncpundit.ml/", "_blank");
+              "https://github.syncpundit.io/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp1;
@@ -118,7 +118,7 @@ $("#mform2").submit(function(e) {
   $( "#mcode3" ).addClass('mactivecode');
 
  }else if(input2.toLowerCase() == 'contact'){
-  document.getElementById("msection").insertAdjacentHTML("afterend","<table id=\"msection1\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"m-catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.ml\">Email</a></p><p class=\"m-catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"m-catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform3\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode3\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function03M();\"></form></td></tr></table>");
+  document.getElementById("msection").insertAdjacentHTML("afterend","<table id=\"msection1\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"m-catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.io\">Email</a></p><p class=\"m-catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"m-catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform3\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode3\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function03M();\"></form></td></tr></table>");
   document.getElementById('mtimestamp9').innerHTML =mtimestamp2;
   // document.getElementById('timestamp91').innerHTML = timestamp1;
   $( "#mcode3" ).focus();
@@ -128,7 +128,7 @@ $("#mform2").submit(function(e) {
   document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"msection1\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform3\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode3\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function03M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://blog.syncpundit.ml/", "_blank");
+            "https://blog.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp2;
@@ -140,7 +140,7 @@ $("#mform2").submit(function(e) {
   document.getElementById("msection").insertAdjacentHTML("afterend","<table id= \"msection1\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\..... taking you to my github api ......\</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform3\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode3\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function03M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://github.syncpundit.ml/", "_blank");
+            "https://github.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp2;
@@ -211,7 +211,7 @@ $("#mform3").submit(function(e) {
     $( "#mcode4" ).addClass('mactivecode');
 
    }else if(input3.toLowerCase() == 'contact'){
-    document.getElementById("msection1").insertAdjacentHTML("afterend","<table id=\"msection2\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"m-catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.ml\">Email</a></p><p class=\"m-catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"m-catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform4\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode4\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function04M();\"></form></td></tr></table>");
+    document.getElementById("msection1").insertAdjacentHTML("afterend","<table id=\"msection2\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"m-catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.io\">Email</a></p><p class=\"m-catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"m-catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform4\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode4\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function04M();\"></form></td></tr></table>");
     document.getElementById('mtimestamp9').innerHTML =mtimestamp3;
     // document.getElementById('timestamp91').innerHTML = timestamp1;
     $( "#mcode4" ).focus();
@@ -221,7 +221,7 @@ $("#mform3").submit(function(e) {
     document.getElementById("msection1").insertAdjacentHTML("afterend","<table id= \"msection2\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform4\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode4\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function04M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://blog.syncpundit.ml/", "_blank");
+              "https://blog.syncpundit.io/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp3;
@@ -233,7 +233,7 @@ $("#mform3").submit(function(e) {
     document.getElementById("msection1").insertAdjacentHTML("afterend","<table id= \"msection2\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\..... taking you to my github api ......\</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform4\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode4\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function04M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://github.syncpundit.ml/", "_blank");
+              "https://github.syncpundit.io/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp3;
@@ -304,7 +304,7 @@ $("#mform4").submit(function(e) {
     $( "#mcode5" ).addClass('mactivecode');
 
    }else if(input4.toLowerCase() == 'contact'){
-    document.getElementById("msection2").insertAdjacentHTML("afterend","<table id=\"msection3\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"m-catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.ml\">Email</a></p><p class=\"m-catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"m-catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform5\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode5\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function05M();\"></form></td></tr></table>");
+    document.getElementById("msection2").insertAdjacentHTML("afterend","<table id=\"msection3\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"m-catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.io\">Email</a></p><p class=\"m-catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"m-catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform5\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode5\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function05M();\"></form></td></tr></table>");
     document.getElementById('mtimestamp9').innerHTML =mtimestamp4;
     // document.getElementById('timestamp91').innerHTML = timestamp1;
     $( "#mcode5" ).focus();
@@ -314,7 +314,7 @@ $("#mform4").submit(function(e) {
     document.getElementById("msection2").insertAdjacentHTML("afterend","<table id= \"msection3\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform5\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode5\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function05M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://blog.syncpundit.ml/", "_blank");
+              "https://blog.syncpundit.io/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp4;
@@ -326,7 +326,7 @@ $("#mform4").submit(function(e) {
     document.getElementById("msection2").insertAdjacentHTML("afterend","<table id= \"msection3\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\..... taking you to my github api ......\</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform5\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode5\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function05M();\"></form></td></tr></table>");
     setTimeout(function(){ 
         window.open( 
-              "https://github.syncpundit.ml/", "_blank");
+              "https://github.syncpundit.io/", "_blank");
     },5000);
     
     document.getElementById('mtimestamp10').innerHTML = mtimestamp4;
@@ -401,7 +401,7 @@ $("#mform6").submit(function(e) {
   $( "#mcode6" ).addClass('mactivecode');
 
  }else if(input5.toLowerCase() == 'contact'){
-  document.getElementById("msection3").insertAdjacentHTML("afterend","<table id=\"msection4\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.ml\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform6\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode6\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function06M();\"></form></td></tr></table>");
+  document.getElementById("msection3").insertAdjacentHTML("afterend","<table id=\"msection4\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.io\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform6\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode6\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function06M();\"></form></td></tr></table>");
   document.getElementById('mtimestamp9').innerHTML = mtimestamp5;
   // document.getElementById('timestamp91').innerHTML = timestamp1;
   $( "#mcode6" ).focus();
@@ -411,7 +411,7 @@ $("#mform6").submit(function(e) {
   document.getElementById("msection3").insertAdjacentHTML("afterend","<table id= \"msection4\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform6\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode6\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function06M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://blog.syncpundit.ml/", "_blank");
+            "https://blog.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp5;
@@ -423,7 +423,7 @@ $("#mform6").submit(function(e) {
   document.getElementById("msection3").insertAdjacentHTML("afterend","<table id= \"msection4\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\..... taking you to my github api ......\</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform6\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode6\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function06M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://github.syncpundit.ml/", "_blank");
+            "https://github.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp5;
@@ -499,7 +499,7 @@ $("#mform6").submit(function(e) {
   $( "#mcode7" ).addClass('mactivecode');
 
  }else if(input6.toLowerCase() == 'contact'){
-  document.getElementById("msection4").insertAdjacentHTML("afterend","<table id=\"msection5\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.ml\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform7\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode7\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function07M();\"></form></td></tr></table>");
+  document.getElementById("msection4").insertAdjacentHTML("afterend","<table id=\"msection5\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.io\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform7\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode7\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function07M();\"></form></td></tr></table>");
   document.getElementById('mtimestamp9').innerHTML = mtimestamp6;
   // document.getElementById('timestamp91').innerHTML = timestamp1;
   $( "#mcode7" ).focus();
@@ -509,7 +509,7 @@ $("#mform6").submit(function(e) {
   document.getElementById("msection4").insertAdjacentHTML("afterend","<table id= \"msection5\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform7\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode7\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function07M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://blog.syncpundit.ml/", "_blank");
+            "https://blog.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp6;
@@ -521,7 +521,7 @@ $("#mform6").submit(function(e) {
   document.getElementById("msection4").insertAdjacentHTML("afterend","<table id= \"msection5\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\..... taking you to my github api ......\</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform7\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode7\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function07M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://github.syncpundit.ml/", "_blank");
+            "https://github.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp6;
@@ -592,7 +592,7 @@ $("#mform7").submit(function(e) {
   $( "#mcode8" ).addClass('mactivecode');
 
  }else if(input7.toLowerCase() == 'contact'){
-  document.getElementById("msection5").insertAdjacentHTML("afterend","<table id=\"msection6\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.ml\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform8\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode8\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function08M();\"></form></td></tr></table>");
+  document.getElementById("msection5").insertAdjacentHTML("afterend","<table id=\"msection6\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.io\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform8\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode8\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function08M();\"></form></td></tr></table>");
   document.getElementById('mtimestamp9').innerHTML = mtimestamp7;
   // document.getElementById('timestamp91').innerHTML = timestamp1;
   $( "#mcode8" ).focus();
@@ -602,7 +602,7 @@ $("#mform7").submit(function(e) {
   document.getElementById("msection5").insertAdjacentHTML("afterend","<table id= \"msection6\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform8\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode8\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function08M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://blog.syncpundit.ml/", "_blank");
+            "https://blog.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp7;
@@ -614,7 +614,7 @@ $("#mform7").submit(function(e) {
   document.getElementById("msection5").insertAdjacentHTML("afterend","<table id= \"msection6\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\..... taking you to my github api ......\</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform8\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode8\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function08M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://github.syncpundit.ml/", "_blank");
+            "https://github.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp7;
@@ -679,7 +679,7 @@ $("#mform8").submit(function(e) {
   $( "#mcode9" ).addClass('mactivecode');
 
  }else if(input8.toLowerCase() == 'contact'){
-  document.getElementById("msection6").insertAdjacentHTML("afterend","<table id=\"msection7\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.ml\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
+  document.getElementById("msection6").insertAdjacentHTML("afterend","<table id=\"msection7\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.io\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
   document.getElementById('mtimestamp9').innerHTML = mtimestamp8;
   // document.getElementById('timestamp91').innerHTML = timestamp1;
   $( "#mcode9" ).focus();
@@ -689,7 +689,7 @@ $("#mform8").submit(function(e) {
   document.getElementById("msection6").insertAdjacentHTML("afterend","<table id= \"msection7\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://blog.syncpundit.ml/", "_blank");
+            "https://blog.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp8;
@@ -701,7 +701,7 @@ $("#mform8").submit(function(e) {
   document.getElementById("msection6").insertAdjacentHTML("afterend","<table id= \"msection7\"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\..... taking you to my github api ......\</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://github.syncpundit.ml/", "_blank");
+            "https://github.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp8;
@@ -768,7 +768,7 @@ $("#mform9").submit(function(e) {
   $( "#mcode" ).addClass('mactivecode');
 
  }else if(input9.toLowerCase() == 'contact'){
-  document.getElementById("msection7").insertAdjacentHTML("afterend","<table id=\"msection8\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.ml\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
+  document.getElementById("msection7").insertAdjacentHTML("afterend","<table id=\"msection8\"><tr id=\"catcon\"><td><span><span id=\"mtimestamp9\"></span> &lt;sync_pundit&gt;</span></td></tr><tr><td><p class=\"catcon-p1\"><a href=\"mailto:Sync_Pundit@syncpundit.io\">Email</a></p><p class=\"catcon-p2\"><a href=\"https://twitter.com/Sync_Pundit\">Twitter</a></p><p class=\"catcon-p3\"><a href=\"https://www.linkedin.com/in/deon-trevor-mpofu\">Linkedin</a></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"m-cont-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"m-cont-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
   document.getElementById('mtimestamp9').innerHTML = mtimestamp9;
   // document.getElementById('timestamp91').innerHTML = timestamp1;
   $( "#mcode" ).focus();
@@ -778,7 +778,7 @@ $("#mform9").submit(function(e) {
   document.getElementById("msection7").insertAdjacentHTML("afterend","<table id= \"msection8 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\"...taking you to the blog...\"</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://blog.syncpundit.ml/", "_blank");
+            "https://blog.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp9;
@@ -790,7 +790,7 @@ $("#mform9").submit(function(e) {
   document.getElementById("msection7").insertAdjacentHTML("afterend","<table id= \"msection8 \"><tr id= \"blog \"><td><span class=\"\"><span id=\"mtimestamp10\"></span> &lt;sync_pundit&gt;</span></td><tr></tr><td><p class=\"m-blog-p1\">\..... taking you to my github api ......\</p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span class=\"blog-s\">root@syncpundit:~#</span></td></tr><tr><td><form action=\"\" id=\"mform9\"><input class=\"blog-s-form\" type=\"text\" id=\"mcode9\" autocomplete=\"off\" autofocus spellcheck=\"false\"><input type=\"submit\" onclick=\"function09M();\"></form></td></tr></table>");
   setTimeout(function(){ 
       window.open( 
-            "https://github.syncpundit.ml/", "_blank");
+            "https://github.syncpundit.io/", "_blank");
   },5000);
   
   document.getElementById('mtimestamp10').innerHTML = mtimestamp9;
