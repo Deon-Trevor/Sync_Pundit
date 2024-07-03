@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+  
+  #terminal {
+    padding: 20px;
+  }
+  #userInput {
+    border: none;
+    outline: none;
+    color: green;
+    background-color: black;
+    cursor: text; /* Set cursor type to text */
+    caret-color: green; /* Set color of the cursor */
+    border-width: 2px; /* Set border width */
+}
+
+  
