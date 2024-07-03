@@ -40,7 +40,7 @@ async function typeCommands() {
   terminal.innerHTML += `<span style="color:white">${beforeHandler}</span>`;
   terminal.innerHTML += `<span style="color:red">multi/handler</span>`;
   terminal.innerHTML += `<span style="color:white">${afterHandler}</span>`;
-  await new Promise((resolve) => setTimeout(resolve, 1000)); 
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   for (let command of typedCommands) {
     await typeText(command, 0, "white");
@@ -48,8 +48,8 @@ async function typeCommands() {
     await new Promise((resolve) => setTimeout(resolve, 1000)); 
   }
 
+  
   terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-
   await typeText(
     "hello....! This is Deon Trevor Mpofu - call me Sync_Pundit",
     0,
@@ -70,29 +70,25 @@ async function typeCommands() {
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
   terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-  
   await typeText("navigate the system to learn more about me", 0, "white");
   terminal.innerHTML;
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
   terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
- 
   await typeText("don't forget to check out the blog too!", 0, "white");
   terminal.innerHTML;
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
   terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-  
   await typeText("break a leg :)", 0, "white");
   await new Promise((resolve) => setTimeout(resolve, 1000));
   terminal.innerHTML += "<br>";
-
-  
+ 
   terminal.innerHTML += `<br><span style="color:green;">Commands:</span> `;
   terminal.innerHTML += "<br>";
   await new Promise((resolve) => setTimeout(resolve, 1000)); 
 
- 
+  
   const commandsList = [
     "whoami",
     "ls",
@@ -112,7 +108,6 @@ async function typeCommands() {
 }
 
 async function displayInputField() {
-
   terminal.innerHTML += '<br><span style="color:green;">root@syncpundit:~#</span> ';
   terminal.innerHTML += '<input id="userInput" type="text">';
   const userInput = document.getElementById("userInput");
@@ -131,101 +126,112 @@ async function handleUserInput(inputField) {
   terminal.removeChild(inputField); 
   terminal.innerHTML += command; 
   terminal.innerHTML += "<br>"; 
+
   if (command === "whoami") {
-  
-    terminal.innerHTML += `<br><span style="color:green; display:inline-block; width: 140px;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-    await typeStyledText(
+    terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
+    await typeText(
       "I'm currently at PhishFort on the frontlines in the war against phishing attacks.",
-      "white",
-      1
+      0,
+      "white"
     );
-    terminal.innerHTML += "<br><span style='display:inline-block; width: 140px;'></span>";
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    await typeStyledText(
+    await typeText(
       "I enjoy hunting down cyber threats, from phishing, malware, defacement, identity theft, etc.",
-      "white",
-      1
+      0,
+      "white"
     );
-    terminal.innerHTML += "<br><span style='display:inline-block; width: 140px;'></span>";
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    await typeStyledText(
+    await typeText(
       "Off work I spend my time training on Try Hack Me and Hack The Box, researching and playing around with all sorts",
-      "white",
-      1
+      0,
+      "white"
     );
-    terminal.innerHTML += "<br><span style='display:inline-block; width: 140px;'></span>";
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    await typeStyledText("I also enjoy playing video games", "white", 1);
-    terminal.innerHTML += "<br><span style='display:inline-block; width: 140px;'></span>";
+    await typeText("I also enjoy playing video games", 0, "white");
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    await typeStyledText(
+    await typeText(
       "- Mortal Kombat, Tekken, Soul Calibur - you get the point, Need for Speed, Forza e.t.c",
-      "white",
-      1
+      0,
+      "white"
     );
-    terminal.innerHTML += "<br><span style='display:inline-block; width: 140px;'></span>";
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    await typeStyledText(
+    await typeText(
       "- Call of Duty, Battlefield - GOD of War, GTA",
-      "white",
-      1
+      0,
+      "white"
     );
-    terminal.innerHTML += "<br><span style='display:inline-block; width: 140px;'></span>";
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    await typeStyledText(".....I just love video games :)", "white", 1);
-    terminal.innerHTML += "<br><span style='display:inline-block; width: 140px;'></span>";
+    await typeText(".....I just love video games :)", 0, "white");
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    await typeStyledText(
+    await typeText(
       "I also sing and record covers, beatbox, rap (I'm horrible btw, but I like it!), watch anime and stand up comedy",
-      "white",
-      1
+      0,
+      "white"
     );
   } else if (command === "ls") {
-   
-    terminal.innerHTML += `<br><span style="color:green; display:inline-block; width: 140px;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-    await typeStyledText(
-      "projects.txt    resume.pdf    blog    portfolio",
-      "white",
-      1
+    terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
+    await typeText(
+      "projects.txt",
+      0,
+      "white"
     );
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await typeText("resume.pdf", 0, "white");
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await typeText("blog ", 0, "white");
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await typeText("portfolio ", 0, "white");
   } else if (command === "expertise") {
-   
-    terminal.innerHTML += `<br><span style="color:green; display:inline-block; width: 140px;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-    await typeStyledText(
-      "Security Research, Network Penetration Testing, Web Application Security, Malware Analysis",
-      "white",
-      1
+    terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
+    await typeText(
+      "Security Research,",
+      0,
+      "white"
     );
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await typeText("Network Penetration Testing,", 0, "white");
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await typeText("Web Application Security,", 0, "white");
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await typeText("Malware Analysis,", 0, "white");
   } else if (command === "contact") {
-    
-    terminal.innerHTML += `<br><span style="color:green; display:inline-block; width: 140px;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-    await typeStyledText("Email: syncpundit@example.com", "white", 1);
-    terminal.innerHTML += "<br><span style='display:inline-block; width: 140px;'></span>";
+    terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
+    await typeText("Email: syncpundit@example.com", 0, "white");
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    await typeStyledText("Twitter: @sync_pundit", "white", 152);
-    terminal.innerHTML += "<br><span style='display:inline-block; width: 140px;'></span>";
+    await typeText("Twitter: @sync_pundit", 0, "white");
+    terminal.innerHTML += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    await typeStyledText("LinkedIn: sync_pundit", "white", 152);
+    await typeText("LinkedIn: sync_pundit", 0, "white");
   } else if (command === "blog") {
-    
-    terminal.innerHTML += `<br><span style="color:green; display:inline-block; width: 140px;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-    await typeStyledText(
+    terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
+    await typeText(
       "Check out my blog at: syncpundit-blog.com",
-      "white",
-      1
+      0,
+      "white"
     );
   } else if (command === "github") {
-    
-    terminal.innerHTML += `<br><span style="color:green; display:inline-block; width: 140px;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-    await typeStyledText("GitHub: github.com/sync_pundit", "white", 1);
+    terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
+    await typeText("GitHub: github.com/sync_pundit", 0, "white");
   } else if (command === "misc") {
-  
-    terminal.innerHTML += `<br><span style="color:green; display:inline-block; width: 140px;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-    await typeStyledText("Miscellaneous information goes here", "white", 1);
+    terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
+    await typeText("Miscellaneous information goes here", 0, "white");
   } else {
-    
-    terminal.innerHTML += `<br><span style="color:green; display:inline-block; width: 140px;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
-    await typeStyledText("Command not found", "white", 1);
+    terminal.innerHTML += `<br><span style="color:green;">${getCurrentTime()} &lt;sync_pundit&gt;</span> `;
+    await typeText("Command not found", 0, "white");
   }
   terminal.innerHTML += "<br>";
 
@@ -234,27 +240,19 @@ async function handleUserInput(inputField) {
 }
 
 
-function typeStyledText(text, color, margin) {
+function typeText(text, index, color) {
   return new Promise((resolve) => {
-    const span = document.createElement("span");
-    span.style.color = color;
-    span.style.marginLeft = `${margin}px`;
-    span.style.display = "inline-block";
-    terminal.appendChild(span);
-    let index = 0;
-
-    function typeNextChar() {
-      if (index < text.length) {
-        span.innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeNextChar, Math.random() * 10 + 5); // Random delay between 10ms and 15ms
-      } else {
-        resolve();
-      }
+    if (index < text.length) {
+      let currentChar = text.charAt(index);
+      terminal.innerHTML += `<span style="color:${color}">${currentChar}</span>`;
+      setTimeout(() => {
+        resolve(typeText(text, index + 1, color));
+      }, Math.random() * 10 + 5); 
+    } else {
+      resolve();
     }
-    typeNextChar();
   });
 }
 
-
+// Start the script
 typeCommands();
