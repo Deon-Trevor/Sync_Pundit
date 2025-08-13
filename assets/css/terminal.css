@@ -1,0 +1,52 @@
+.terminal {
+    border-radius: 16px;
+    border: 1px solid rgba(121, 214, 181, .22);
+    background: var(--term-bg);
+    backdrop-filter: blur(8px);
+}
+
+.terminal__chrome {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 12px;
+    background: var(--term-chrome);
+    border-bottom: 1px dashed rgba(121, 214, 181, .22)
+}
+
+.terminal__chrome .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    display: inline-block
+}
+
+.terminal__chrome .dot.red {
+    background: #ff5f56
+}
+
+.terminal__chrome .dot.yellow {
+    background: #ffbd2e
+}
+
+.terminal__chrome .dot.green {
+    background: #27c93f
+}
+
+.terminal__chrome .title {
+    margin-left: 6px;
+    color: var(--muted);
+    font-weight: 600
+}
+
+.terminal__body {
+    padding: 14px 16px
+}
+
+.prompt {
+    color: var(--term-fg)
+}
+
+.answer {
+    color: var(--term-fg)
+}

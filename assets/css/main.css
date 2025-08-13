@@ -1,0 +1,363 @@
+:root {
+    --bg: #0c1014;
+    --panel: #0f151b;
+    --text: #e8f1f4;
+    --muted: #8aa0ad;
+    --brand: #79D6B5;
+    --ring: rgba(121, 214, 181, .35);
+    --glass: rgba(255, 255, 255, .06);
+    --border: 1px solid rgba(121, 214, 181, .18);
+    --radius: 16px;
+    --term-bg: rgba(0, 0, 0, 0.6);
+    --term-chrome: rgba(0, 0, 0, 0.85);
+    --term-fg: #79d6b5;
+    --muted: rgba(121, 214, 181, 0.6);
+    --terminal-green: #79d6b5;
+}
+
+/* Alternate Theme: Green Matrix */
+[data-theme="green"] {
+    --term-bg: rgba(0, 20, 0, 0.9);
+    --term-chrome: rgba(0, 40, 0, 0.95);
+    --term-fg: #00ff7f;
+    --muted: rgba(0, 255, 127, 0.6);
+    --terminal-green: #00ff7f;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 500 15px/1.55 "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px
+}
+
+.muted {
+    color: var(--muted)
+}
+
+.site-header .brand {
+    display: flex;
+    align-items: center;
+    /* Ensures logo and text align vertically */
+    gap: 0.75rem;
+    /* Space between logo and titles */
+}
+
+.site-header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color, #2e8b57);
+    color: white;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.25rem;
+}
+
+.site-header .titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.site-header .titles h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.site-header .titles p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--muted-color, #999);
+}
+
+/* Ensure the header action area can receive clicks */
+.terminal-header {
+    position: relative;
+    z-index: 1;
+}
+
+.header-actions {
+    position: relative;
+    z-index: 2;
+    /* above any decorative overlays */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* If you have a scanline/glow overlay via ::before/::after, don't let it eat clicks */
+.terminal-header::before,
+.terminal-header::after {
+    pointer-events: none;
+}
+
+
+.terminal-line {
+    color: #00ff80;
+    font-weight: 600;
+}
+
+.prompt-symbol {
+    color: #00ffaa;
+}
+
+.terminal-username {
+    color: #39d353;
+}
+
+.terminal-host {
+    color: #58a6ff;
+}
+
+.terminal-path {
+    color: #facc15;
+}
+
+.terminal-command {
+    color: #ff7b72;
+}
+
+.terminal-output {
+    color: #c9d1d9;
+    margin: 0.3rem 0 0;
+    font-size: 0.9rem;
+}
+
+.brand {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.brand .logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, #2e7d6b, #79D6B5);
+    color: #0b0f14;
+    font-weight: 900
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #2e7d6b, #79D6B5);
+    color: #0b0f14;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.btn:hover {
+    filter: saturate(1.1)
+}
+
+.btn.ghost {
+    background: transparent;
+    border: var(--border);
+    color: var(--text)
+}
+
+.btn-ghost {
+    background: transparent;
+    border: var(--border);
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.btn-terminal {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    padding: .25rem .55rem;
+    border: 1px solid var(--brand, #79D6B5);
+    background: transparent;
+    color: var(--brand, #79D6B5);
+    font: 600 .85rem/1.2 "JetBrains Mono", ui-monospace, monospace;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-terminal:hover {
+    background: var(--brand, #79D6B5);
+    color: #0b0f14
+}
+
+.btn-terminal .k {
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    padding: .05rem .25rem;
+    font-size: .75em;
+    opacity: .8
+}
+
+.hero {
+    display: grid;
+    gap: 14px
+}
+
+.grid {
+    display: grid;
+    gap: 12px;
+    margin-top: 18px
+}
+
+/* visually hidden but accessible */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media(min-width:860px) {
+    .grid {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+.card {
+    background: var(--panel);
+    border-radius: var(--radius);
+    border: var(--border);
+    padding: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25)
+}
+
+.bullets {
+    margin: 0;
+    padding-left: 18px
+}
+
+.bullets li a {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+.bullets li a:hover {
+    text-decoration: none;
+}
+
+.site-footer {
+    position: sticky;
+    /* sticks at the bottom of the viewport within the page scroll */
+    bottom: 0;
+    /* background: rgba(15, 21, 27, 0.8); */
+    /* your panel color with some alpha */
+    backdrop-filter: blur(8px);
+    /* border-top: 1px solid rgba(121, 214, 181, .18); */
+    padding: 10px 16px;
+    z-index: 20;
+}
+
+/* Ensure the last content isn’t hidden behind the sticky footer */
+main {
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+/* Just in case a wide nav overlay sits on top */
+.social,
+.social-list {
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+/* social */
+.social-list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.social-list a {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: var(--border);
+    text-decoration: none;
+    color: var(--text)
+}
+
+.social-list a:hover {
+    text-decoration: underline
+}
+
+/* Keep the list snappy and predictable */
+#recent-list {
+    display: grid;
+    gap: 6px;
+    padding-left: 18px;
+    /* your bullets indent */
+}
+
+/* Avoid layout shift when items load */
+#recent-list[aria-busy="true"] {
+    min-height: 2.5em;
+}
+
+/* If you want a soft edge when it scrolls */
+.card--recent {
+    mask-image: linear-gradient(#000, #000 calc(100% - 14px), transparent 100%);
+}
+
+/* theme presets for terminal */
+body[data-theme="green"] .terminal {
+    --term-bg: #0a0f0a;
+    --term-fg: #b5f7c8;
+    --term-caret: #79D6B5;
+    --term-chrome: #0c140c
+}
+
+body[data-theme="glass"] .terminal {
+    --term-bg: linear-gradient(180deg, rgba(121, 214, 181, .08), rgba(46, 125, 107, .06));
+    --term-fg: #e9fff6;
+    --term-caret: #79D6B5;
+    --term-chrome: rgba(255, 255, 255, .06)
+}
+
+/* Make the actual button explicitly clickable */
+#themeToggle {
+    pointer-events: auto;
+    position: relative;
+    z-index: 3;
+}
