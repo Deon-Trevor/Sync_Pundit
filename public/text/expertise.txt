@@ -1,9 +1,0 @@
-Anti-Phishing
-Cyber Threat Intelligence
-OSINT
-Threat Hunting
-Social Engineering
-Malware Analysis
-Security Testing and Assessment
-Google Cloud Platform
-
