@@ -24,9 +24,9 @@
       if (!user) return done(`<li class="muted">GitHub username not found in site.json.</li>`);
 
       const token = (document.querySelector('meta[name="github-token"]') || {}).content;
-      const events = await fetchEvents(user, token);
+      const { events, serverNow } = await fetchEvents(user, token);
 
-      const items = mapNotable(events).slice(0, 6);
+      const items = mapNotable(events, serverNow).slice(0, 6);
       if (!items.length) return done(`<li class="muted">No recent public activity.</li>`);
 
       done(items.map(toLi).join(""));
@@ -38,7 +38,7 @@
 
   // ---- data loading ----
   async function loadSiteJson() {
-    const candidates = ["/assets/site.json", "/data/site.json", "/site.json"];
+    const candidates = ["/data/site.json"];
     for (const url of candidates) {
       try {
         const r = await fetch(url, { cache: "no-store" });
@@ -73,16 +73,19 @@
       if (res.status === 403) throw new Error("rate-limited");
       throw new Error(`GitHub ${res.status}`);
     }
-    return res.json();
+    // Use GitHub’s server time as the reference “now”
+    const serverNow = Date.parse(res.headers.get("date")) || Date.now();
+    const events = await res.json();
+    return { events, serverNow };
   }
 
   // ---- mapping / rendering ----
-  function mapNotable(events) {
+  function mapNotable(events, nowMs) {
     const out = [];
     for (const ev of events) {
       const type = ev.type;
       const repo = ev.repo?.name;
-      const when = timeAgo(ev.created_at);
+      const when = timeAgo(ev.created_at, nowMs);
 
       if (type === "PushEvent" && ev.payload?.commits?.length) {
         const n = ev.payload.commits.length;
@@ -90,7 +93,7 @@
           icon: "⬆️",
           text: `pushed ${n} commit${n > 1 ? "s" : ""} to ${repo}`,
           url: `https://github.com/${repo}/commits`,
-          when
+          when, created_at: ev.created_at
         });
       } else if (type === "PullRequestEvent" && ev.payload?.pull_request) {
         const pr = ev.payload.pull_request;
@@ -98,7 +101,7 @@
           icon: pr.merged_at ? "✅" : ev.payload.action === "opened" ? "📝" : "🔁",
           text: `${ev.payload.action} PR #${pr.number} in ${repo}: ${truncate(pr.title, 90)}`,
           url: pr.html_url,
-          when
+          when, created_at: ev.created_at
         });
       } else if (type === "IssuesEvent" && ev.payload?.issue) {
         const is = ev.payload.issue;
@@ -106,7 +109,7 @@
           icon: ev.payload.action === "opened" ? "🐞" : "🛠️",
           text: `${ev.payload.action} issue #${is.number} in ${repo}: ${truncate(is.title, 90)}`,
           url: is.html_url,
-          when
+          when, created_at: ev.created_at
         });
       } else if (type === "ReleaseEvent" && ev.payload?.release) {
         const rel = ev.payload.release;
@@ -114,28 +117,28 @@
           icon: "🚀",
           text: `released ${rel.tag_name} on ${repo}`,
           url: rel.html_url,
-          when
+          when, created_at: ev.created_at
         });
       } else if (type === "CreateEvent" && ev.payload?.ref_type === "repository") {
         out.push({
           icon: "✨",
           text: `created repo ${repo}`,
           url: `https://github.com/${repo}`,
-          when
+          when, created_at: ev.created_at
         });
       } else if (type === "ForkEvent" && ev.payload?.forkee) {
         out.push({
           icon: "🌿",
           text: `forked ${repo} → ${ev.payload.forkee.full_name}`,
           url: ev.payload.forkee.html_url,
-          when
+          when, created_at: ev.created_at
         });
       } else if (type === "WatchEvent") {
         out.push({
           icon: "⭐",
           text: `starred ${repo}`,
           url: `https://github.com/${repo}`,
-          when
+          when, created_at: ev.created_at
         });
       }
     }
@@ -150,7 +153,13 @@
   }
 
   function toLi(item) {
-    return `<li><a href="${item.url}" target="_blank" rel="noopener">${item.icon} ${escapeHTML(item.text)}</a> <span class="muted">• ${item.when}</span></li>`;
+    const absolute = new Date(item.created_at);
+    const showAbsolute = Date.now() - absolute.getTime() > 7 * 24 * 3600 * 1000; // > 7 days
+    const absText = absolute.toLocaleString(undefined, {
+      year: "numeric", month: "short", day: "numeric"
+    });
+    const whenText = showAbsolute ? absText : item.when;
+    return `<li><a href="${item.url}" target="_blank" rel="noopener">${item.icon} ${escapeHTML(item.text)}</a> <span class="muted">• ${whenText}</span></li>`;
   }
 
   // ---- utils ----
@@ -163,9 +172,11 @@
     } catch { return null; }
   }
 
-  function timeAgo(iso) {
+  // Use a supplied “now” (server time) instead of client clock
+  function timeAgo(iso, nowMs) {
     const d = new Date(iso).getTime();
-    const s = Math.max(1, Math.floor((Date.now() - d) / 1000));
+    const now = typeof nowMs === "number" ? nowMs : Date.now();
+    const s = Math.max(1, Math.floor((now - d) / 1000));
     const steps = [
       [60, "s"], [60, "m"], [24, "h"],
       [7, "d"], [4.348, "w"], [12, "mo"], [Number.POSITIVE_INFINITY, "y"]
@@ -174,6 +185,7 @@
     for (const [k, u] of steps) { if (val < k) break; val = Math.floor(val / k); unit = u; }
     return `${val}${unit} ago`;
   }
+
 
   function truncate(str, n) { return (str || "").length > n ? str.slice(0, n - 1) + "…" : str || ""; }
   function escapeHTML(s) { return String(s || "").replace(/[&<>"']/g, m => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[m])); }

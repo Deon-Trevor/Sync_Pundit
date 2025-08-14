@@ -8,11 +8,12 @@
     },
     "expertise": {
         "areas": [
-            "OSINT & Recon",
-            "Security Engineering",
+            "Open Source Intelligence (OSINT)",
+            "Brand & Digital Risk Protection",
+            "Scripting & Automation",
             "Social Engineering",
-            "Threat Detection",
-            "Automation & CLI tooling"
+            "Cyber-Enabled Financial Crime",
+            "Threat Detection & Mitigation"
         ]
     },
     "contact": {

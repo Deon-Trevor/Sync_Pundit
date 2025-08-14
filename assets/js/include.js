@@ -1,13 +1,27 @@
-// Fetch partials into [data-include] and then load site data.
+// /assets/js/include.js
 (async function () {
-    const includes = Array.from(document.querySelectorAll('[data-include]'));
-    await Promise.all(includes.map(async el => {
+    const slots = [...document.querySelectorAll('[data-include]')];
+
+    await Promise.all(slots.map(async el => {
         const url = el.getAttribute('data-include');
-        const res = await fetch(url, { cache: 'no-store' });
-        el.outerHTML = await res.text();
+        if (!url) return;
+        const r = await fetch(url, { cache: 'no-store' });
+        el.innerHTML = r.ok ? await r.text() : `<!-- include failed: ${url} -->`;
     }));
 
-    // After partials are in, kick data rendering.
-    window.__renderSite && window.__renderSite();
-    window.dispatchEvent(new Event('partials:ready'));
+    // tell listeners partials are in the DOM
+    window.dispatchEvent(new CustomEvent('partials:ready'));
+
+    // render data (if present)
+    if (typeof window.__renderSite === 'function') {
+        try { await window.__renderSite(); } catch { }
+    }
+
+    // everything’s ready
+    window.dispatchEvent(new CustomEvent('site:ready'));
+    if (!r.ok) {
+        console.warn(`include failed: ${url} (${r.status})`);
+        el.innerHTML = `<!-- include failed: ${url} -->`;
+    }
+
 })();

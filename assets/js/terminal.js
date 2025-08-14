@@ -47,23 +47,15 @@
         return true;
     }
 
-    // Try now; if not, wait for partials
-    if (!bindThemeButton()) {
-        // 1) Your include.js should dispatch this once partials are injected:
-        // window.dispatchEvent(new CustomEvent('partials:ready'));
-        window.addEventListener('partials:ready', bindThemeButton, { once: true });
-
-        // 2) Fallback observer (disconnect after 5s idle to avoid running forever)
-        const mo = new MutationObserver(() => { if (bindThemeButton()) mo.disconnect(); });
-        mo.observe(document.body, { childList: true, subtree: true });
-        setTimeout(() => mo.disconnect(), 5000);
-    }
-
-    // --- tiny typewriter after load (one-shot) ---
     function runTypewriter() {
         const pre = document.querySelector('.terminal pre');
-        if (!pre || pre.__typed) return;
+        if (!pre || pre.__typed) return false;
         const txt = pre.innerHTML;
+        if (!txt || !txt.trim()) return false;
+
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduce) { pre.innerHTML = txt; pre.__typed = true; return true; }
+
         pre.innerHTML = '';
         let i = 0;
         (function step() {
@@ -71,7 +63,41 @@
             if (i < txt.length) requestAnimationFrame(step);
             else pre.__typed = true;
         })();
+        return true;
     }
-    if (document.readyState === 'complete') runTypewriter();
-    else window.addEventListener('load', runTypewriter);
+
+
+    // Prefer a deterministic signal after partials + render are done
+    window.addEventListener('site:ready', () => {
+        if (!runTypewriter()) {
+            // if content still not there, use a short-lived observer
+            const mo = new MutationObserver(() => {
+                if (runTypewriter()) mo.disconnect();
+            });
+            mo.observe(document.body, { childList: true, subtree: true });
+            setTimeout(() => mo.disconnect(), 5000);
+        }
+    }, { once: true });
+
+    // Absolute fallback if someone loads terminal.js but not include.js
+    if (document.readyState === 'complete') {
+        setTimeout(runTypewriter, 0);
+    } else {
+        window.addEventListener('load', () => setTimeout(runTypewriter, 0), { once: true });
+    }
+
+    // Try to bind immediately
+    let bound = bindThemeButton();
+
+    // Bind again once partials + render are done
+    window.addEventListener('site:ready', () => {
+        if (!bindThemeButton()) {
+            const mo = new MutationObserver(() => {
+                if (bindThemeButton()) mo.disconnect();
+            });
+            mo.observe(document.body, { childList: true, subtree: true });
+            setTimeout(() => mo.disconnect(), 5000);
+        }
+    }, { once: true });
+
 })();

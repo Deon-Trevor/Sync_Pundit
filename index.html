@@ -3,7 +3,14 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="abuseipdb-verification" content="PE2zl36d" />
+  <meta name="wot-verification" content="5b679c9720d8fa493573" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Sync_Pundit 👽😎🔱🔥| Cyber Security Analyst | Cyber Threat Intelligence | Fighting Phishing">
+  <meta name="keywords"
+    content="Sync_Pundit,👽😎🔱🔥, Deon Trevor Mpofu, Sync Pundit, syncpundit, Cyber Security Analyst, Cyber Threat Intelligence, curious n00b">
+  <meta name="author" content="Sync_Pundit 👽😎🔱🔥">
   <title data-bind="site.title">Sync_Pundit</title>
   <meta name="description" content="Hacker • Builder • Curious n00b" data-bind="site.tagline">
   <link rel="icon" href="/assets/favicon.jpg" />
@@ -12,6 +19,11 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="stylesheet" href="/assets/css/terminal.css" />
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="preload" href="/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </noscript>
 </head>
 
 <body>
@@ -23,16 +35,31 @@
       <div data-include="/partials/terminal.html"></div>
 
       <div class="hero__cta">
-        <a href="#" class="btn-terminal" data-href="site.projects.links.url" target="_blank" rel="noopener">View
-          Projects</a>
+        <a href="#" class="btn-terminal" data-href="site.projects.links.url" aria-label="View projects on GitHub"
+          target="_blank" rel="noopener">View Projects</a>
       </div>
     </section>
 
     <section class="grid">
       <article class="card">
         <h2>What I do</h2>
-        <p>Find threats, rabbit hole, write detection logic, build tools, repeat.</p>
+
+        <!-- Toggle button -->
+        <div class="toggle-container" style="margin-bottom: 1em;">
+          <button id="toggleMode" class="btn-terminal">Mom-friendly</button>
+        </div>
+
+        <!-- Dynamic description -->
+        <p id="whatIDoText">
+          I design and deliver intelligence-driven security solutions that uncover, analyse, and mitigate high-risk
+          cyber threats. Leveraging OSINT, automation, and advanced detection workflows, I track malicious
+          infrastructure, expose fraud networks, and produce actionable intelligence for decision-makers. I bridge the
+          gap between technical engineering and frontline security operations—building scalable platforms, training
+          analysts, and guiding stakeholders through complex threat landscapes to enhance national and global security
+          outcomes.
+        </p>
       </article>
+
       <article class="card">
         <h2>Recent things</h2>
         <ul id="recent-list" class="bullets" aria-busy="true">
@@ -44,6 +71,7 @@
         </div>
       </article>
     </section>
+
   </main>
 
   <div data-include="/partials/footer.html"></div>
@@ -53,5 +81,15 @@
   <script src="/assets/js/render.js" defer></script>
   <script src="/assets/js/terminal.js" defer></script>
 </body>
+<noscript>
+  <style>
+    #recent-skel {
+      display: none
+    }
+  </style>
+  <ul class="bullets">
+    <li class="muted">Enable JavaScript to see recent activity.</li>
+  </ul>
+</noscript>
 
 </html>

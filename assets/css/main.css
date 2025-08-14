@@ -3,25 +3,35 @@
     --panel: #0f151b;
     --text: #e8f1f4;
     --muted: #8aa0ad;
+    /* keep this */
     --brand: #79D6B5;
     --ring: rgba(121, 214, 181, .35);
     --glass: rgba(255, 255, 255, .06);
     --border: 1px solid rgba(121, 214, 181, .18);
     --radius: 16px;
-    --term-bg: rgba(0, 0, 0, 0.6);
-    --term-chrome: rgba(0, 0, 0, 0.85);
+    --term-bg: rgba(0, 0, 0, .6);
+    --term-chrome: rgba(0, 0, 0, .85);
     --term-fg: #79d6b5;
-    --muted: rgba(121, 214, 181, 0.6);
+    --term-muted: rgba(121, 214, 181, .6);
+    /* was --muted again */
     --terminal-green: #79d6b5;
 }
 
+
 /* Alternate Theme: Green Matrix */
 [data-theme="green"] {
-    --term-bg: rgba(0, 20, 0, 0.9);
-    --term-chrome: rgba(0, 40, 0, 0.95);
+    /* only terminal vars */
+    --term-bg: rgba(0, 20, 0, .9);
+    --term-chrome: rgba(0, 40, 0, .95);
     --term-fg: #00ff7f;
-    --muted: rgba(0, 255, 127, 0.6);
+    --term-muted: rgba(0, 255, 127, .6);
     --terminal-green: #00ff7f;
+}
+
+.terminal__chrome .title {
+    margin-left: 6px;
+    color: var(--term-muted);
+    font-weight: 600;
 }
 
 * {
@@ -48,6 +58,96 @@ body {
 
 .muted {
     color: var(--muted)
+}
+
+/* Ensure the header action area can receive clicks */
+.terminal-header {
+    position: relative;
+    z-index: 1;
+}
+
+/* If you have a scanline/glow overlay via ::before/::after, don't let it eat clicks */
+.terminal-header::before,
+.terminal-header::after {
+    pointer-events: none;
+}
+
+
+.terminal-line {
+    color: #00ff80;
+    font-weight: 600;
+}
+
+.prompt,
+.answer {
+    color: var(--term-fg);
+}
+
+.prompt-symbol {
+    color: #00ffaa;
+}
+
+.terminal-username {
+    color: #39d353;
+}
+
+.terminal-host {
+    color: #58a6ff;
+}
+
+.terminal-path {
+    color: #facc15;
+}
+
+.terminal-command {
+    color: #ff7b72;
+}
+
+.terminal-output {
+    color: var(--text);
+    opacity: .9;
+}
+
+.brand {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.brand .logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, #2e7d6b, #79D6B5);
+    color: #0b0f14;
+    font-weight: 900
+}
+
+.header-actions {
+    position: relative;
+    z-index: 2;
+    /* above any decorative overlays */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-badge {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* or flex-end if you want it on the right */
+    margin-top: 8px;
+    /* small gap from top items */
+}
+
+.header-badge iframe {
+    max-width: 160px;
+    /* keeps it from going huge */
+    height: auto;
 }
 
 .site-header .brand {
@@ -86,83 +186,7 @@ body {
 .site-header .titles p {
     margin: 0;
     font-size: 0.875rem;
-    color: var(--muted-color, #999);
-}
-
-/* Ensure the header action area can receive clicks */
-.terminal-header {
-    position: relative;
-    z-index: 1;
-}
-
-.header-actions {
-    position: relative;
-    z-index: 2;
-    /* above any decorative overlays */
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-/* If you have a scanline/glow overlay via ::before/::after, don't let it eat clicks */
-.terminal-header::before,
-.terminal-header::after {
-    pointer-events: none;
-}
-
-
-.terminal-line {
-    color: #00ff80;
-    font-weight: 600;
-}
-
-.prompt-symbol {
-    color: #00ffaa;
-}
-
-.terminal-username {
-    color: #39d353;
-}
-
-.terminal-host {
-    color: #58a6ff;
-}
-
-.terminal-path {
-    color: #facc15;
-}
-
-.terminal-command {
-    color: #ff7b72;
-}
-
-.terminal-output {
-    color: #c9d1d9;
-    margin: 0.3rem 0 0;
-    font-size: 0.9rem;
-}
-
-.brand {
-    display: flex;
-    gap: 12px;
-    align-items: center
-}
-
-.brand .logo {
-    width: 28px;
-    height: 28px;
-    border-radius: 6px;
-    display: grid;
-    place-items: center;
-    background: linear-gradient(180deg, #2e7d6b, #79D6B5);
-    color: #0b0f14;
-    font-weight: 900
-}
-
-.header-actions {
-    display: flex;
-    gap: 10px;
-    align-items: center
+    color: var(--muted-color);
 }
 
 .btn {
@@ -180,45 +204,115 @@ body {
     filter: saturate(1.1)
 }
 
-.btn.ghost {
-    background: transparent;
-    border: var(--border);
-    color: var(--text)
-}
-
-.btn-ghost {
-    background: transparent;
-    border: var(--border);
-    color: var(--text);
-    padding: 8px 12px;
-    border-radius: 10px;
-    cursor: pointer
-}
-
-.btn-terminal {
-    display: inline-flex;
-    align-items: center;
-    gap: .45rem;
-    padding: .25rem .55rem;
-    border: 1px solid var(--brand, #79D6B5);
-    background: transparent;
-    color: var(--brand, #79D6B5);
-    font: 600 .85rem/1.2 "JetBrains Mono", ui-monospace, monospace;
-    border-radius: 4px;
+/* terminal-ish toggle */
+.btn-ghost,
+.t-btn {
+    font: 600 12px/1.2 "JetBrains Mono", ui-monospace, monospace;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px dashed rgba(121, 214, 181, .35);
+    background: rgba(121, 214, 181, .06);
     cursor: pointer;
 }
 
-.btn-terminal:hover {
-    background: var(--brand, #79D6B5);
-    color: #0b0f14
+.btn-ghost:hover,
+.t-btn:hover {
+    filter: saturate(1.1);
 }
 
-.btn-terminal .k {
-    border: 1px solid currentColor;
-    border-radius: 3px;
-    padding: .05rem .25rem;
-    font-size: .75em;
-    opacity: .8
+/* terminal-style toggle button (fallback first) */
+.btn-terminal {
+    /* Fallback vars (work everywhere) */
+    --t-border: rgba(121, 214, 181, .35);
+    --t-bg: rgba(121, 214, 181, .06);
+    --t-bg-hover: rgba(121, 214, 181, .10);
+    --t-text: var(--text);
+
+    font: 600 12px/1.2 "JetBrains Mono", ui-monospace, monospace;
+    padding: 6px 10px;
+    color: var(--t-text);
+    background: var(--t-bg);
+    border: 1px dashed var(--t-border);
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: background .18s ease, box-shadow 0.25s ease, filter .18s ease, transform 0.25s ease;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .25);
+}
+
+/* Modern override if color-mix is supported */
+@supports (color: color-mix(in srgb, white 50%, black)) {
+    .btn-terminal {
+        --t-border: color-mix(in srgb, var(--term-fg) 35%, transparent);
+        --t-bg: color-mix(in srgb, var(--term-bg) 25%, transparent);
+        --t-bg-hover: color-mix(in srgb, var(--term-bg) 40%, transparent);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .terminal pre {
+        animation: none !important;
+    }
+}
+
+
+.btn-terminal:hover {
+    background: var(--t-bg-hover);
+}
+
+.btn-terminal[aria-pressed="true"] {
+    border-style: solid;
+    background: linear-gradient(180deg,
+            color-mix(in srgb, var(--term-fg) 12%, transparent),
+            color-mix(in srgb, var(--term-bg) 10%, transparent));
+}
+
+
+.btn-terminal:active {
+    transform: translateY(0.5px);
+}
+
+/* keyboard focus — terminalish glow */
+.btn-terminal:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--ring);
+}
+
+.btn-terminal:hover,
+.btn-terminal:focus {
+    animation: terminal-pulse 1.5s infinite alternate;
+    transform: translateY(-1px);
+}
+
+@keyframes terminal-pulse {
+    0% {
+        box-shadow: 0 0 8px var(--term-fg, #79D6B5),
+            0 0 16px rgba(121, 214, 181, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 16px var(--term-fg, #79D6B5),
+            0 0 32px rgba(121, 214, 181, 0.6);
+    }
+}
+
+/* optional: tiny glyph to feel like a command */
+.btn-terminal::before {
+    content: "$ ";
+    opacity: .7;
+    margin-right: 4px;
+}
+
+a.btn-terminal {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
+
+a.btn-terminal:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--ring);
 }
 
 .hero {
